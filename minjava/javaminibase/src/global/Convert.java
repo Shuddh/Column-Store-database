@@ -106,8 +106,9 @@ public class Convert{
    * @return      the string
    */
   public static String getStrValue (int position, byte []data, int length)
-    throws java.io.IOException
+    throws java.io.IOException,java.io.EOFException
     {
+	  try {
       InputStream in;
       DataInputStream instr;
       String value;
@@ -119,10 +120,18 @@ public class Convert{
       /* creates a new data input stream to read data from the
        * specified input stream
        */
-      in = new ByteArrayInputStream(tmp);
+   /*   System.out.println("temp");
+      System.out.println(new String(tmp));*/
+      in = new ByteArrayInputStream(tmp); 
+     
       instr = new DataInputStream(in);
       value = instr.readUTF();
-      return value;
+      return value;}
+	  catch(EOFException e) {
+		  
+	  }
+  return null;
+      
     }
   
   /**

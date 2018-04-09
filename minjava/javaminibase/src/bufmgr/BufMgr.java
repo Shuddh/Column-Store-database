@@ -13,58 +13,70 @@ import global.*;
  * its pin count, and the pin count change when pinning or unpinning 
  * a page.
  */
-class FrameDesc implements GlobalConst{
-  
-  /** The page within file, or INVALID_PAGE if the frame is empty. */
-  public PageId pageNo;     
-  
-  /** the dirty bit, 1 (TRUE) stands for this frame is altered,
-   *0 (FALSE) for clean frames.
-   */
-  public boolean dirty;     
-                         
-  /** The pin count for the page in this frame */
-  public int pin_cnt;   
+class FrameDesc implements GlobalConst {
 
-  /** Creates a FrameDesc object, initialize pageNo, dirty and 
-   * pin_count.
-   */
-  public FrameDesc() {
-  
-    pageNo = new PageId();
-    pageNo.pid = INVALID_PAGE;
-    dirty   = false;
-    pin_cnt = 0;
-    
-  }
-  
-  
-  
-  /** Returns the pin count of a certain frame page. 
-   *
-   * @return the pin count number.
-   */
-  public int pin_count() { return(pin_cnt); }
-  
-  /** Increments the pin count of a certain frame page when the
-   * page is pinned.
-   *
-   * @return the incremented pin count.
-   */
-  public int pin() { return(++pin_cnt); }
-  
-  /** Decrements the pin count of a frame when the page is 
-   * unpinned.  If the pin count is equal to or less than
-   * zero, the pin count will be zero.
-   *
-   * @return the decremented pin count.
-   */
-  public int unpin() {
-    
-    pin_cnt = (pin_cnt <= 0) ? 0 : pin_cnt - 1;
-    
-    return(pin_cnt);
-  }
+    /**
+     * The page within file, or INVALID_PAGE if the frame is empty.
+     */
+    public PageId pageNo;
+
+    /**
+     * the dirty bit, 1 (TRUE) stands for this frame is altered,
+     * 0 (FALSE) for clean frames.
+     */
+    public boolean dirty;
+
+    /**
+     * The pin count for the page in this frame
+     */
+    public int pin_cnt;
+
+    /**
+     * Creates a FrameDesc object, initialize pageNo, dirty and
+     * pin_count.
+     */
+    public FrameDesc() {
+
+        pageNo = new PageId();
+        pageNo.pid = INVALID_PAGE;
+        dirty = false;
+        pin_cnt = 0;
+
+    }
+
+
+    /**
+     * Returns the pin count of a certain frame page.
+     *
+     * @return the pin count number.
+     */
+    public int pin_count() {
+        return (pin_cnt);
+    }
+
+    /**
+     * Increments the pin count of a certain frame page when the
+     * page is pinned.
+     *
+     * @return the incremented pin count.
+     */
+    public int pin() {
+        return (++pin_cnt);
+    }
+
+    /**
+     * Decrements the pin count of a frame when the page is
+     * unpinned.  If the pin count is equal to or less than
+     * zero, the pin count will be zero.
+     *
+     * @return the decremented pin count.
+     */
+    public int unpin() {
+
+        pin_cnt = (pin_cnt <= 0) ? 0 : pin_cnt - 1;
+
+        return (pin_cnt);
+    }
 }
 
 
@@ -260,6 +272,7 @@ class Clock extends Replacer {
     {
       int num = 0;
       int numBuffers = mgr.getNumBuffers();
+     // System.out.println(i++);
       
       head = (head+1) % numBuffers;
       while ( state_bit[head].state != Available ) {
@@ -359,12 +372,14 @@ public class BufMgr implements GlobalConst{
       
       for (i=0; i < numBuffers; i++)   // write all valid dirty pages to disk
 	if ( (all_pages !=0) || (frmeTable[i].pageNo.pid == pageid.pid)) {
-	  
+   //       System.out.println("buffpid");
+   //       System.out.println(frmeTable[i].pageNo.pid);
 	  if ( frmeTable[i].pin_count() != 0 )
 	    unpinned++;
 	  
 	  if ( frmeTable[i].dirty != false ) {
-	    
+   //       System.out.println("dirty");
+     //     System.out.println(frmeTable[i].pageNo.pid);
 	    if(frmeTable[i].pageNo.pid == INVALID_PAGE)
 	      
 	      throw new PageNotFoundException( null, "BUFMGR: INVALID_PAGE_NO");
@@ -376,6 +391,7 @@ public class BufMgr implements GlobalConst{
 	    write_page(pageid, apage);
 	    
 	    try {
+
 	      hashTable.remove(pageid);
 	    }
 	    
@@ -392,6 +408,8 @@ public class BufMgr implements GlobalConst{
 	    if (unpinned != 0) 
 	      throw new PagePinnedException (null, "BUFMGR: PAGE_PINNED.");
 	  }
+  //      System.out.println("flushedpid");
+  //      System.out.println(frmeTable[i].pageNo.pid);
 	}
       
       if (all_pages != 0) {
@@ -499,7 +517,7 @@ public class BufMgr implements GlobalConst{
       frameNo = hashTable.lookup(pin_pgid);
       
       if (frameNo < 0) {           // Not in the buffer pool
-	
+    	// System.out.println("read1");
 	frameNo = replacer.pick_victim(); // frameNo is pinned
 	if (frameNo < 0) { 
 	  page = null; 
@@ -531,7 +549,8 @@ public class BufMgr implements GlobalConst{
 	}
 	
 	Page apage = new Page(bufPool[frameNo]);
-	if (needwrite == 1) {	
+	if (needwrite == 1) {
+		
 	  write_page(oldpageNo, apage);	 	
 	} // end of needwrite..
 	
@@ -544,7 +563,6 @@ public class BufMgr implements GlobalConst{
 	  }
 	  catch (Exception e) {
 	    
-
 	    bst = hashTable.remove(frmeTable[frameNo].pageNo);
 	    if (bst != true)
 	      throw new HashOperationException (e, "BUFMGR: HASH_TABLE_ERROR.");
@@ -816,6 +834,7 @@ public class BufMgr implements GlobalConst{
     throws BufMgrException {
     
     try {
+   //     System.out.println(pageno);
       SystemDefs.JavabaseDB.write_page(pageno, page);
     }
     catch (Exception e) {
@@ -857,8 +876,17 @@ public class BufMgr implements GlobalConst{
     catch (Exception e) {
       throw new BufMgrException(e,"BufMgr.java: deallocate_page() failed");
     }
-    
+
   } // end of deallocate_page 
+
+
+    public void unpinbuffpages()
+    {
+        for(int i =0 ; i<numBuffers; i++)
+        {
+            frmeTable[i].pin_cnt = 0;
+        }
+    }
 
 }
 

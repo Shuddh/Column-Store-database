@@ -627,8 +627,8 @@ public class Scan implements GlobalConst{
     throws HFBufMgrException {
 
     try {
-      SystemDefs.JavabaseBM.pinPage(pageno, page, emptyPage);
-    }
+      SystemDefs.JavabaseBM.pinPage(pageno, page, emptyPage); }
+
     catch (Exception e) {
       throw new HFBufMgrException(e,"Scan.java: pinPage() failed");
     }

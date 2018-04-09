@@ -127,7 +127,8 @@ class BTreeHeaderPage extends HFPage {
     { 
       super();
       try {
-	
+        System.out.println("pageno");
+      System.out.println(pageno);
 	SystemDefs.JavabaseBM.pinPage(pageno, this, false/*Rdisk*/); 
       }
       catch (Exception e) {

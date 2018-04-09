@@ -242,6 +242,7 @@ public class Tuple implements GlobalConst{
    	throws IOException, FieldNumberOutOfBoundException 
    { 
          String val;
+         
     if ( (fldNo > 0) && (fldNo <= fldCnt))      
      {
         val = Convert.getStrValue(fldOffset[fldNo -1], data, 
@@ -288,6 +289,7 @@ public class Tuple implements GlobalConst{
   public Tuple setIntFld(int fldNo, int val) 
   	throws IOException, FieldNumberOutOfBoundException
   { 
+	  
     if ( (fldNo > 0) && (fldNo <= fldCnt))
      {
 	Convert.setIntValue (val, fldOffset[fldNo -1], data);
@@ -309,6 +311,7 @@ public class Tuple implements GlobalConst{
   public Tuple setFloFld(int fldNo, float val) 
   	throws IOException, FieldNumberOutOfBoundException
   { 
+	  
    if ( (fldNo > 0) && (fldNo <= fldCnt))
     {
      Convert.setFloValue (val, fldOffset[fldNo -1], data);

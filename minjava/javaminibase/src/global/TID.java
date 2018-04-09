@@ -64,6 +64,7 @@ public class TID{
 	public void setRID(int column,RID recordID){
 		this.recordIDs[column-1]=recordID;
 	}
+	
 
 }
 

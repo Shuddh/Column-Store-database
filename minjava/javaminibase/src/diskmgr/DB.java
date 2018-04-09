@@ -31,7 +31,9 @@ public class DB implements GlobalConst {
     
     // Creaat a random access file
     fp = new RandomAccessFile(fname, "rw");
-    
+  //  System.out.println("opendb");
+  //    System.out.println(fname);
+
     PageId pageId = new PageId();
     Page apage = new Page();
     pageId.pid = 0;
@@ -51,7 +53,7 @@ public class DB implements GlobalConst {
   /** default constructor.
    */
   public DB() { }
-  
+
   
   /** DB Constructors.
    * Create a database with the specified number of pages where the page
@@ -70,7 +72,7 @@ public class DB implements GlobalConst {
 	   InvalidPageNumberException,
 	   FileIOException,
 	   DiskMgrException {
-    
+	  pcounter.initialize();
     name = new String(fname);
     num_pages = (num_pgs > 2) ? num_pgs : 2;
     
@@ -103,6 +105,9 @@ public class DB implements GlobalConst {
     int num_map_pages = (num_pages + bits_per_page -1)/bits_per_page;
     
     set_bits(pageId, 1+num_map_pages, 1);
+
+    // Intialize disk read write counter
+  //  pcounter.initialize();
     
   }
   
@@ -135,10 +140,11 @@ public class DB implements GlobalConst {
    * @exception IOException I/O errors
    */
   public  void read_page(PageId pageno, Page apage)
-    throws InvalidPageNumberException, 
+    throws InvalidPageNumberException,
 	   FileIOException, 
 	   IOException {
-
+   //   System.out.println("pageno.pid");
+  //  System.out.println(pageno.pid);
     if((pageno.pid < 0)||(pageno.pid >= num_pages))
       throw new InvalidPageNumberException(null, "BAD_PAGE_NUMBER");
     
@@ -149,6 +155,9 @@ public class DB implements GlobalConst {
     byte [] buffer = apage.getpage();  //new byte[MINIBASE_PAGESIZE];
     try{
       fp.read(buffer);
+  //    System.out.println("read");
+      //increament disk page read counter when page is read from the disk
+      pcounter.readIncrement();
     }
     catch (IOException e) {
       throw new FileIOException(e, "DB file I/O error");
@@ -169,16 +178,21 @@ public class DB implements GlobalConst {
     throws InvalidPageNumberException, 
 	   FileIOException, 
 	   IOException {
-
+	  
     if((pageno.pid < 0)||(pageno.pid >= num_pages))
       throw new InvalidPageNumberException(null, "INVALID_PAGE_NUMBER");
     
     // Seek to the correct page
     fp.seek((long)(pageno.pid *MINIBASE_PAGESIZE));
+   
     
     // Write the appropriate number of bytes.
     try{
       fp.write(apage.getpage());
+    //  System.out.println("write");
+   //   System.out.println("write");
+        pcounter.writeIncrement();
+   //  System.out.println(pcounter.wcounter);
     }
     catch (IOException e) {
       throw new FileIOException(e, "DB file I/O error");
@@ -634,6 +648,7 @@ public class DB implements GlobalConst {
   }
   
   /** Functions to return some characteristics of the database.
+   * 
    */
   public String db_name(){return name;}
   public int db_num_pages(){return num_pages;}

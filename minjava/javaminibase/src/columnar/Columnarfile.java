@@ -1,9 +1,7 @@
 package columnar;
 
 import btree.IntegerKey;
-import global.AttrType;
 import global.*;
-import global.GlobalConst;
 import heap.*;
 import java.*;
 
@@ -11,26 +9,28 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Columnarfile implements GlobalConst {
-    private Heapfile columnarFile;
+    public Heapfile columnarinfoFile;
     private String filename;
     private int numColumns;
     AttrType[] type;
+    public String[] colNames;
     public Heapfile[] hfColumns;
     public String[] hfNames;
     public int tupleLength;
-    private ColumnDataPageInfo cdpinfo;
+    public ColumnDataPageInfo cdpinfo;
     private Heapfile hfDelTIDsFile;
     private Heapfile hfDelTIDsDataFile;
     private ArrayList<RID> delTuplesRIDs=new ArrayList<RID>();
     private static int delTupleCnt;
+    private static RID rid=new RID();
 
     public void setColumnarFile(Heapfile cf){
-        this.columnarFile=cf;
+        this.columnarinfoFile=cf;
     }
 
-    public Heapfile getColumnarFile() {
+   /* public Heapfile getColumnarFile() {
         return columnarFile;
-    }
+    } */
 
     public void setFilename(String name){
         this.filename=name;
@@ -65,16 +65,18 @@ public class Columnarfile implements GlobalConst {
         return type;
     }
 
-    public Columnarfile(String name, int numColumns, AttrType[] type) {
+    public Columnarfile(String name, int numColumns, AttrType[] type,String[] colNames,int[] StringSize) {
         this.filename = name;
         this.numColumns = numColumns;
         this.type = type;
+        this.colNames=colNames;
         hfColumns = new Heapfile[numColumns];
         hfNames = new String[numColumns];
-        cdpinfo = new ColumnDataPageInfo(filename, numColumns,type);
+        cdpinfo = new ColumnDataPageInfo(filename, numColumns);
         int i = 0;
         try {
-            columnarFile = new Heapfile(filename+".hdr");
+            columnarinfoFile = new Heapfile(filename+".hdr");
+            cdpinfo.setColumnarFileName(filename+".hdr");
             hfDelTIDsDataFile=new Heapfile(filename+".delData");
             hfDelTIDsFile=new Heapfile(filename+".delTIDs");
             for (AttrType attr : type) {
@@ -82,12 +84,20 @@ public class Columnarfile implements GlobalConst {
                     tupleLength+=globalVar.sizeOfStr;
                 else
                     tupleLength+=globalVar.sizeOfInt;
-                hfNames[i] = name.concat(Integer.toString(i));
+                hfNames[i] = name.concat("."+Integer.toString(i));
                 hfColumns[i] = new Heapfile(hfNames[i]);
+             //   PageID p=SystemDefs.JavabaseDBName.get_file_entry(hfNames[i]);
                 i++;
             }
-            cdpinfo.setHfNames(hfNames);
             cdpinfo.setTupleLength(tupleLength);
+            cdpinfo.setNumColumns(numColumns);
+            cdpinfo.setAttrTypes(type);
+            cdpinfo.setStringSize(StringSize);
+            cdpinfo.setColNames(colNames);
+            cdpinfo.setHfNames(hfNames);
+            Tuple t =cdpinfo.setMetaData();
+         
+            columnarinfoFile.insertRecord(t.getTupleByteArray());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -99,7 +109,7 @@ public class Columnarfile implements GlobalConst {
             for (Heapfile hf : hfColumns) {
                 hf.deleteFile();
             }
-            columnarFile.deleteFile();
+            columnarinfoFile.deleteFile();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -107,8 +117,10 @@ public class Columnarfile implements GlobalConst {
 
     public TID insertTuple(byte[] tuplePtr) throws SpaceNotAvailableException,
             InvalidTupleSizeException,HFException,HFBufMgrException,
-            HFDiskMgrException, IOException,InvalidSlotNumberException
+            HFDiskMgrException, IOException,InvalidSlotNumberException,Exception
     {
+ 
+        
         if (tuplePtr.length >= MAX_SPACE)
             throw new SpaceNotAvailableException(null, "ColumarFile:- Space not available");
         TID tid=new TID();
@@ -118,16 +130,20 @@ public class Columnarfile implements GlobalConst {
         for(int i=0;i<numColumns;i++){
             if(type[i].attrType==AttrType.attrString){
                 byte[] value=new byte[globalVar.sizeOfStr];
+                
                 String content=Convert.getStrValue(offset,tuplePtr,globalVar.sizeOfStr);
                 Convert.setStrValue(content,0,value);
                 tid.recordIDs[i]=hfColumns[i].insertRecord(value);
                 offset+=globalVar.sizeOfStr;
             }
             if(type[i].attrType==AttrType.attrInteger){
+               // System.out.println(new String(tuplePtr));
                 byte[] value=new byte[globalVar.sizeOfInt];
                 int content=Convert.getIntValue(offset,tuplePtr);
+               
                 Convert.setIntValue(content,0,value);
                 tid.recordIDs[i]=hfColumns[i].insertRecord(value);
+               
                 offset+=globalVar.sizeOfInt;
             }
             if(type[i].attrType==AttrType.attrReal){
@@ -138,14 +154,14 @@ public class Columnarfile implements GlobalConst {
                 offset+=globalVar.sizeOfInt;
             }
             if(type[i].attrType==AttrType.attrSymbol){
-                byte[] value=new byte[globalVar.sizeOfChar];
+                byte[] value=new byte[globalVar.sizeOfStr];
                 char content=Convert.getCharValue(offset,tuplePtr);
                 Convert.setCharValue(content,0,value);
                 tid.recordIDs[i]=hfColumns[i].insertRecord(value);
-                offset+=globalVar.sizeOfChar;
+                offset+=globalVar.sizeOfStr;
             }
         }
-        tid.position=hfColumns[0].getPosition(tid.recordIDs[0]);
+        tid.position=hfColumns[0].getposition(tid.recordIDs[0]);
         return tid;
     }
 
@@ -166,7 +182,7 @@ public class Columnarfile implements GlobalConst {
             }
             if(type[i].attrType==AttrType.attrSymbol){
                 Convert.setCharValue(temp.getCharFld(1),offset,tupVal);
-                offset=offset+globalVar.sizeOfChar;
+                offset=offset+globalVar.sizeOfStr;
             }
             if(type[i].attrType==AttrType.attrInteger){
                 Convert.setIntValue(temp.getIntFld(1),offset,tupVal);
@@ -251,46 +267,54 @@ public class Columnarfile implements GlobalConst {
         return status;
     }
 
-    public boolean markTupleDeleted(TID tid){
+    public boolean markTupleDeleted(TID tid,int purge) throws HFException, HFBufMgrException, HFDiskMgrException, IOException{
         boolean status=false;
+        hfDelTIDsFile=new Heapfile(filename+".delTIDs");
+        hfDelTIDsDataFile = new Heapfile(filename+".delData");
         byte[] delData=new byte[tupleLength];
         byte[] delRIDs=new byte[numColumns*2*globalVar.sizeOfInt];
         int offset1=0;
         int offset2=0;
-        Tuple tempData;
+        Tuple tempData = null;
+      
         try {
             for (int i = 0; i < numColumns; i++) {
+         
                 if (type[i].attrType == AttrType.attrString) {
+                	
                     tempData = hfColumns[i].getRecord(tid.recordIDs[i]);
-                    Convert.setStrValue(tempData.getStrFld(1),offset1,delData);
+                 
+                   hfColumns[i].deleteRecord(tid.recordIDs[i]);
+                   
+                    String val = Convert.getStrValue(0, tempData.getTupleByteArray(), globalVar.sizeOfStr);
+                  
+                    Convert.setStrValue(val,offset1,delData);
                     offset1=offset1+globalVar.sizeOfStr;
                 }
                 if (type[i].attrType == AttrType.attrInteger) {
-                    tempData = hfColumns[i].getRecord(tid.recordIDs[i]);
-                    Convert.setIntValue(tempData.getIntFld(1),offset1,delData);
+      
+                   tempData = hfColumns[i].getRecord(tid.recordIDs[i]);
+                	                    
+                    hfColumns[i].deleteRecord(tid.recordIDs[i]);
+                    int val = Convert.getIntValue(0, tempData.getTupleByteArray());
+                    
+                    Convert.setIntValue(val,offset1,delData);
                     offset1=offset1+globalVar.sizeOfInt;
                 }
-                if (type[i].attrType == AttrType.attrReal) {
-                    tempData = hfColumns[i].getRecord(tid.recordIDs[i]);
-                    Convert.setFloValue(tempData.getFloFld(1),offset1,delData);
-                    offset1=offset1+globalVar.sizeOfInt;
-                }
-                if (type[i].attrType == AttrType.attrSymbol) {
-                    tempData = hfColumns[i].getRecord(tid.recordIDs[i]);
-                    Convert.setCharValue(tempData.getCharFld(1),offset1,delData);
-                    offset1=offset1+globalVar.sizeOfChar;
-                }
+                
+               
                 Convert.setIntValue(tid.recordIDs[i].pageNo.pid,offset2,delRIDs);
                 Convert.setIntValue(tid.recordIDs[i].slotNo,offset2+globalVar.sizeOfInt,delRIDs);
                 offset2=offset2+(2*globalVar.sizeOfInt);
             }
+            if(purge==1){
             hfDelTIDsFile.insertRecord(delRIDs);
             RID rid=hfDelTIDsDataFile.insertRecord(delData);
             delTuplesRIDs.add(rid);
             delTupleCnt=delTupleCnt+1;
-            status=true;
+            status=true;}
         }catch (Exception e){
-            e.printStackTrace();
+           e.printStackTrace();
         }
         return status;
     }
@@ -310,5 +334,22 @@ public class Columnarfile implements GlobalConst {
         delTuplesRIDs.clear();
         return status;
     }
-
+    public Columnarfile()
+    {}
+    public Columnarfile getColumnarFile(ColumnDataPageInfo cfmeta) throws HFException, HFBufMgrException, HFDiskMgrException, IOException
+    {
+    	Columnarfile cf =new Columnarfile();
+        cf.filename=cfmeta.getColumnarFileName();
+        cf.numColumns = cfmeta.getNumColumns();
+        cf.type=cfmeta.getAttrTypes();
+        cf.colNames=cfmeta.getColNames();
+        cf.hfNames=cfmeta.getHfNames();
+        cf.tupleLength=cfmeta.getTupleLength();
+    	cf.hfColumns = new Heapfile[cf.numColumns];
+    	for(int i=0;i<cf.hfNames.length;i++) {
+    	cf.hfColumns[i]= new Heapfile(cf.hfNames[i]);}
+    	
+    	
+    	return cf;
+    }
 }

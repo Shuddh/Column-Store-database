@@ -1,0 +1,5226 @@
+Script started on Fri Mar 30 10:17:23 2018
+[?1034hbash-3.2$ exit() ;[Kclearjava tests/batchinsert sampledata.txt db8 if8 4 1[C[C[C[C[C[C[C[C[C[Cscript [Kjava tests/batchinsert sampledata.txt db8 if8 4 1[C[1P[1P[1@a[1@t[1@a[C[C[1P[1P[1P[1@b[C[C[C[C[1P[1P[1P[1@c[1@l
+Replacer: Clock
+
+A:char(25)	B:char(25)	C:int	D:int
+South_Dakota	West_Virginia	6	3
+Connecticut	Delaware	8	8
+New_Hampshire	Kansas	2	1
+Connecticut	Puerto_Rico	4	9
+Montana	District_of_Columbia	2	8
+Vermont	West_Virginia	8	6
+New_Hampshire	District_of_Columbia	6	6
+Kentucky	Singapore	1	0
+Connecticut	Indiana	2	8
+Delaware	Singapore	8	6
+Colorado	Connecticut	9	0
+Vermont	Puerto_Rico	3	3
+Puerto_Rico	Business	0	4
+Indiana	West_Virginia	1	5
+Business	Vermont	0	4
+Nevada	Oklahoma	0	7
+Nevada	District_of_Columbia	8	3
+Puerto_Rico	Indiana	2	1
+Montana	District_of_Columbia	6	9
+South_Dakota	Singapore	2	0
+North_Dakota	Singapore	4	2
+Colorado	District_of_Columbia	0	6
+Oklahoma	Oklahoma	7	1
+Delaware	Vermont	3	9
+Montana	Colorado	6	1
+Business	Nevada	4	0
+North_Dakota	Kentucky	9	5
+Connecticut	Oklahoma	1	6
+Colorado	New_Hampshire	3	1
+Nevada	Kentucky	9	9
+Nevada	West_Virginia	2	5
+Oklahoma	Puerto_Rico	2	7
+West_Virginia	Kentucky	3	2
+Connecticut	Puerto_Rico	7	5
+Puerto_Rico	West_Virginia	5	1
+Indiana	Montana	2	6
+Idaho	District_of_Columbia	3	5
+Oklahoma	Connecticut	3	3
+Arkansas	Kentucky	0	7
+South_Dakota	Nevada	2	3
+Idaho	Delaware	8	9
+Montana	Connecticut	2	4
+Delaware	North_Dakota	7	0
+Arkansas	Connecticut	1	1
+Idaho	Arkansas	5	7
+Oklahoma	Kentucky	6	7
+District_of_Columbia	Connecticut	6	6
+Vermont	West_Virginia	9	0
+Singapore	South_Dakota	3	7
+Vermont	District_of_Columbia	2	3
+Idaho	Colorado	6	4
+Indiana	Colorado	5	1
+Connecticut	Delaware	0	3
+Montana	Vermont	8	8
+New_Hampshire	Kansas	5	9
+New_Hampshire	Idaho	2	1
+Business	Montana	6	1
+Colorado	District_of_Columbia	4	9
+Oklahoma	Montana	8	1
+South_Dakota	Colorado	9	5
+Business	Singapore	2	1
+Business	Arkansas	1	5
+Kentucky	Puerto_Rico	2	3
+Business	Delaware	3	1
+Puerto_Rico	Nevada	3	6
+Kansas	District_of_Columbia	6	4
+North_Dakota	Delaware	4	6
+Indiana	Puerto_Rico	3	6
+New_Hampshire	Kentucky	1	9
+Montana	North_Dakota	9	4
+Colorado	South_Dakota	3	3
+Idaho	Connecticut	0	5
+New_Hampshire	North_Dakota	2	9
+Singapore	Idaho	3	0
+West_Virginia	Arkansas	5	5
+Kentucky	Colorado	2	1
+Vermont	North_Dakota	8	5
+West_Virginia	Vermont	9	5
+North_Dakota	South_Dakota	4	7
+Connecticut	Oklahoma	1	5
+North_Dakota	Singapore	8	0
+Delaware	Nevada	1	9
+Vermont	Singapore	6	4
+Idaho	Kentucky	5	8
+Puerto_Rico	Nevada	5	7
+Idaho	Idaho	7	6
+Idaho	Oklahoma	3	4
+New_Hampshire	Puerto_Rico	7	8
+Nevada	West_Virginia	1	2
+Nevada	Montana	6	2
+North_Dakota	Business	9	9
+Kentucky	Kentucky	9	0
+Arkansas	Montana	3	2
+Arkansas	District_of_Columbia	2	8
+Montana	Connecticut	2	6
+New_Hampshire	Colorado	1	4
+Arkansas	North_Dakota	1	1
+Connecticut	South_Dakota	7	8
+District_of_Columbia	Delaware	2	3
+Oklahoma	Kansas	5	5
+Colorado	Nevada	7	1
+Idaho	New_Hampshire	2	4
+Puerto_Rico	West_Virginia	0	1
+West_Virginia	Kentucky	6	1
+North_Dakota	Nevada	3	9
+Vermont	Colorado	1	4
+New_Hampshire	Oklahoma	9	3
+Vermont	Vermont	6	1
+Montana	Indiana	2	1
+New_Hampshire	Colorado	5	8
+Colorado	Idaho	6	9
+Connecticut	Kentucky	0	4
+District_of_Columbia	Business	1	4
+Kansas	Puerto_Rico	7	9
+Nevada	Montana	5	0
+South_Dakota	Montana	8	1
+Connecticut	Business	4	4
+New_Hampshire	Montana	2	8
+Colorado	Idaho	5	2
+Delaware	Kansas	1	1
+North_Dakota	Oklahoma	7	4
+District_of_Columbia	West_Virginia	4	4
+Kentucky	Oklahoma	1	5
+South_Dakota	Indiana	2	8
+South_Dakota	Delaware	3	1
+Oklahoma	Nevada	2	5
+Idaho	New_Hampshire	9	1
+Oklahoma	South_Dakota	0	3
+Kansas	Puerto_Rico	5	2
+Business	Delaware	0	9
+Indiana	New_Hampshire	0	2
+New_Hampshire	Montana	5	7
+Business	South_Dakota	0	6
+Indiana	District_of_Columbia	7	7
+Colorado	Puerto_Rico	8	8
+Nevada	Connecticut	8	3
+West_Virginia	West_Virginia	0	0
+Montana	Puerto_Rico	1	1
+Oklahoma	Arkansas	3	6
+North_Dakota	Idaho	7	0
+South_Dakota	Kansas	7	8
+Singapore	Business	3	2
+Nevada	Montana	7	9
+Nevada	Colorado	3	4
+Indiana	Arkansas	7	7
+West_Virginia	Indiana	0	5
+Vermont	Montana	2	5
+New_Hampshire	Delaware	3	4
+Singapore	Kentucky	9	8
+Idaho	Kansas	3	6
+Kentucky	Kansas	0	5
+South_Dakota	Oklahoma	5	4
+Puerto_Rico	Colorado	7	9
+Singapore	Vermont	9	9
+District_of_Columbia	Montana	7	2
+West_Virginia	Kentucky	3	9
+Singapore	Delaware	0	2
+Indiana	Singapore	5	0
+Arkansas	New_Hampshire	4	5
+Idaho	Puerto_Rico	3	2
+West_Virginia	Arkansas	3	8
+Idaho	Singapore	1	6
+Connecticut	Montana	0	6
+Montana	District_of_Columbia	3	0
+Connecticut	New_Hampshire	4	8
+Business	West_Virginia	2	1
+West_Virginia	Arkansas	8	3
+South_Dakota	Delaware	9	5
+Singapore	Business	1	8
+District_of_Columbia	Arkansas	2	1
+Delaware	Puerto_Rico	6	3
+Indiana	Indiana	6	7
+Oklahoma	Colorado	0	3
+South_Dakota	Singapore	1	3
+Connecticut	West_Virginia	0	5
+Vermont	Montana	9	0
+Business	Arkansas	8	6
+South_Dakota	Montana	8	0
+South_Dakota	Connecticut	7	7
+South_Dakota	Nevada	5	5
+Puerto_Rico	Arkansas	8	0
+Puerto_Rico	North_Dakota	7	9
+New_Hampshire	Nevada	6	5
+Montana	South_Dakota	7	4
+Vermont	Singapore	7	4
+New_Hampshire	Colorado	4	9
+Kentucky	Puerto_Rico	6	6
+Business	Singapore	9	9
+North_Dakota	Kentucky	2	8
+North_Dakota	Business	3	9
+Vermont	New_Hampshire	2	8
+Arkansas	South_Dakota	3	5
+District_of_Columbia	District_of_Columbia	3	6
+Nevada	West_Virginia	4	3
+South_Dakota	Nevada	9	5
+Colorado	Connecticut	3	6
+Business	Connecticut	4	8
+Arkansas	Arkansas	7	5
+New_Hampshire	Connecticut	2	5
+Nevada	Indiana	3	2
+North_Dakota	Vermont	7	0
+Puerto_Rico	Montana	1	6
+Nevada	South_Dakota	6	6
+Singapore	Oklahoma	2	9
+Vermont	North_Dakota	5	0
+Business	Puerto_Rico	0	7
+Montana	Vermont	4	5
+West_Virginia	District_of_Columbia	5	6
+Arkansas	Arkansas	7	3
+Delaware	New_Hampshire	6	2
+Puerto_Rico	Colorado	8	0
+Montana	Connecticut	9	9
+Puerto_Rico	Puerto_Rico	4	4
+Nevada	Idaho	0	2
+New_Hampshire	Montana	8	3
+Kentucky	Connecticut	4	5
+Arkansas	Singapore	4	2
+District_of_Columbia	Business	0	0
+West_Virginia	Idaho	9	6
+Singapore	North_Dakota	1	0
+Idaho	Puerto_Rico	9	4
+Kentucky	Oklahoma	4	3
+Connecticut	Business	0	0
+Kentucky	Business	9	0
+Oklahoma	Connecticut	6	3
+Kansas	Oklahoma	2	4
+Delaware	Oklahoma	2	4
+Business	Puerto_Rico	4	9
+Vermont	Vermont	4	4
+Kentucky	Indiana	5	6
+Indiana	North_Dakota	1	0
+Oklahoma	Singapore	2	6
+Puerto_Rico	New_Hampshire	9	7
+Oklahoma	District_of_Columbia	7	2
+Puerto_Rico	Puerto_Rico	6	7
+Nevada	Singapore	4	0
+Arkansas	New_Hampshire	6	8
+North_Dakota	Montana	2	7
+North_Dakota	West_Virginia	4	4
+Idaho	District_of_Columbia	0	7
+Kansas	Oklahoma	3	1
+District_of_Columbia	District_of_Columbia	8	0
+Kentucky	New_Hampshire	0	0
+Kentucky	West_Virginia	4	7
+Connecticut	Montana	5	7
+District_of_Columbia	Montana	7	4
+Colorado	District_of_Columbia	1	9
+Montana	Business	0	3
+New_Hampshire	Indiana	9	3
+District_of_Columbia	Arkansas	0	6
+District_of_Columbia	Singapore	3	0
+Business	Idaho	7	5
+Connecticut	Indiana	2	9
+Montana	Nevada	0	1
+Kansas	Indiana	2	6
+Kansas	Montana	7	3
+Vermont	Arkansas	8	3
+Colorado	Oklahoma	4	9
+New_Hampshire	Nevada	7	0
+Kentucky	Singapore	4	9
+Singapore	Indiana	1	5
+Arkansas	Montana	5	4
+Nevada	Oklahoma	0	6
+Singapore	Idaho	8	9
+Kentucky	New_Hampshire	0	4
+West_Virginia	Vermont	7	5
+District_of_Columbia	Arkansas	9	9
+Kentucky	West_Virginia	5	9
+District_of_Columbia	South_Dakota	4	5
+West_Virginia	Delaware	5	1
+North_Dakota	New_Hampshire	4	9
+Business	Puerto_Rico	1	0
+Business	Colorado	3	2
+Vermont	Singapore	2	4
+West_Virginia	Vermont	0	0
+Oklahoma	North_Dakota	0	7
+North_Dakota	Singapore	9	5
+Delaware	Montana	5	8
+New_Hampshire	South_Dakota	8	8
+Oklahoma	Arkansas	11	11
+Connecticut	Vermont	6	6
+New_Hampshire	Kansas	5	7
+Colorado	Singapore	0	0
+Kentucky	Arkansas	6	6
+Kentucky	Business	4	3
+South_Dakota	Business	2	2
+District_of_Columbia	Puerto_Rico	5	8
+Kansas	Arkansas	2	6
+West_Virginia	South_Dakota	6	9
+Puerto_Rico	Idaho	4	6
+Singapore	South_Dakota	8	6
+Montana	Delaware	3	8
+Indiana	Singapore	2	5
+Kansas	North_Dakota	4	5
+Vermont	Oklahoma	4	9
+Indiana	New_Hampshire	8	6
+Arkansas	North_Dakota	1	9
+West_Virginia	Kentucky	3	2
+Indiana	Arkansas	2	1
+Vermont	Connecticut	2	1
+South_Dakota	Kentucky	8	3
+Nevada	Indiana	7	4
+West_Virginia	Nevada	1	6
+Colorado	Kentucky	5	6
+North_Dakota	Oklahoma	4	8
+Nevada	Montana	4	9
+District_of_Columbia	Kentucky	2	8
+Indiana	North_Dakota	7	0
+Business	Business	6	3
+Montana	Idaho	9	2
+District_of_Columbia	Puerto_Rico	9	1
+Puerto_Rico	New_Hampshire	4	6
+Business	Colorado	3	8
+District_of_Columbia	Connecticut	6	6
+Business	Idaho	3	8
+Delaware	South_Dakota	0	9
+Kansas	Colorado	7	8
+District_of_Columbia	Indiana	0	7
+Business	North_Dakota	5	3
+District_of_Columbia	Arkansas	0	9
+Business	Kansas	0	3
+Business	Puerto_Rico	9	8
+New_Hampshire	Business	5	2
+Puerto_Rico	South_Dakota	2	5
+Puerto_Rico	West_Virginia	0	3
+Kansas	South_Dakota	2	4
+Business	Idaho	8	7
+Kansas	Vermont	7	5
+Vermont	Puerto_Rico	0	2
+District_of_Columbia	Puerto_Rico	1	5
+Singapore	South_Dakota	1	6
+Nevada	Business	0	4
+New_Hampshire	Business	1	9
+Arkansas	Indiana	0	7
+Business	Arkansas	6	7
+Business	Oklahoma	0	2
+Indiana	District_of_Columbia	6	2
+District_of_Columbia	Oklahoma	0	0
+Arkansas	North_Dakota	1	9
+Kentucky	Oklahoma	5	9
+West_Virginia	Connecticut	7	8
+Arkansas	Singapore	2	4
+Oklahoma	Montana	0	0
+New_Hampshire	Puerto_Rico	6	9
+New_Hampshire	Delaware	8	9
+Nevada	Colorado	8	4
+Kansas	Delaware	1	2
+Puerto_Rico	Kentucky	1	3
+North_Dakota	New_Hampshire	6	0
+Indiana	Arkansas	6	6
+Singapore	West_Virginia	2	7
+District_of_Columbia	Colorado	9	0
+District_of_Columbia	Idaho	9	5
+New_Hampshire	District_of_Columbia	6	8
+Colorado	Business	4	3
+South_Dakota	Singapore	7	5
+Colorado	West_Virginia	8	1
+Connecticut	Puerto_Rico	6	7
+Kentucky	Nevada	4	2
+West_Virginia	Kansas	9	7
+Kansas	Business	6	3
+South_Dakota	District_of_Columbia	5	6
+District_of_Columbia	New_Hampshire	4	2
+Montana	Arkansas	0	0
+Kansas	New_Hampshire	4	0
+District_of_Columbia	Montana	2	2
+Oklahoma	Connecticut	3	6
+New_Hampshire	Kentucky	1	4
+Indiana	Delaware	8	5
+Puerto_Rico	South_Dakota	6	0
+Idaho	Idaho	1	7
+Indiana	Singapore	1	9
+Delaware	New_Hampshire	7	0
+District_of_Columbia	Vermont	5	7
+Singapore	North_Dakota	6	9
+New_Hampshire	Vermont	3	0
+Delaware	Arkansas	7	9
+Indiana	District_of_Columbia	0	8
+Colorado	Singapore	6	9
+Vermont	Colorado	1	4
+Business	North_Dakota	6	2
+Arkansas	North_Dakota	2	4
+Idaho	North_Dakota	9	6
+Vermont	Idaho	3	7
+Montana	Connecticut	8	4
+Oklahoma	South_Dakota	7	8
+Nevada	Colorado	2	6
+Kansas	Vermont	6	0
+Indiana	Delaware	7	8
+Nevada	Vermont	2	5
+Arkansas	Nevada	8	2
+Kansas	Kentucky	5	8
+Arkansas	Delaware	6	5
+Singapore	West_Virginia	6	8
+South_Dakota	South_Dakota	7	0
+Indiana	District_of_Columbia	3	8
+Nevada	Montana	9	3
+Delaware	Singapore	9	6
+Arkansas	Montana	2	9
+New_Hampshire	Kansas	2	1
+Vermont	Connecticut	6	7
+Indiana	Colorado	0	7
+Arkansas	Idaho	7	5
+Vermont	Singapore	5	6
+North_Dakota	Business	3	5
+Indiana	Oklahoma	0	7
+Colorado	Delaware	5	0
+Delaware	Idaho	5	7
+Oklahoma	Singapore	6	1
+Arkansas	Puerto_Rico	1	9
+Vermont	Indiana	1	3
+Nevada	Idaho	9	3
+Indiana	Indiana	0	2
+Indiana	Kentucky	6	6
+West_Virginia	Delaware	3	6
+Kansas	Puerto_Rico	9	7
+Delaware	South_Dakota	2	4
+North_Dakota	Colorado	0	1
+Delaware	Singapore	8	4
+Business	Kansas	7	5
+Colorado	South_Dakota	9	5
+Nevada	Connecticut	3	9
+Vermont	South_Dakota	7	8
+Colorado	Colorado	6	2
+Montana	Singapore	7	9
+Oklahoma	Arkansas	4	7
+Arkansas	Delaware	0	3
+Delaware	Arkansas	8	3
+Business	Business	5	5
+Arkansas	New_Hampshire	9	2
+West_Virginia	Idaho	2	3
+Montana	Idaho	0	0
+West_Virginia	New_Hampshire	5	4
+Delaware	Indiana	2	8
+Kentucky	Oklahoma	8	7
+Oklahoma	Puerto_Rico	4	4
+Oklahoma	Nevada	9	1
+Connecticut	Singapore	4	7
+Montana	Nevada	3	8
+District_of_Columbia	District_of_Columbia	1	6
+Idaho	Indiana	4	7
+Vermont	Oklahoma	8	5
+Oklahoma	Connecticut	6	3
+Arkansas	Kansas	5	9
+Puerto_Rico	Delaware	1	0
+Kentucky	Business	8	8
+Kentucky	Kansas	5	1
+North_Dakota	Kentucky	6	3
+Idaho	Montana	9	4
+Nevada	North_Dakota	5	6
+Montana	District_of_Columbia	6	7
+South_Dakota	Kansas	6	2
+Idaho	Business	0	8
+North_Dakota	Kansas	1	3
+Montana	Singapore	5	7
+Vermont	Montana	1	9
+Arkansas	Puerto_Rico	5	0
+Business	Colorado	2	2
+Colorado	District_of_Columbia	1	8
+Vermont	Delaware	5	1
+New_Hampshire	Kansas	1	3
+Vermont	New_Hampshire	1	1
+Vermont	Nevada	7	0
+Oklahoma	New_Hampshire	0	1
+Business	Kansas	4	7
+West_Virginia	Kentucky	9	8
+Oklahoma	South_Dakota	4	2
+District_of_Columbia	Arkansas	2	4
+Nevada	South_Dakota	3	3
+New_Hampshire	Business	6	6
+Singapore	Delaware	4	2
+Idaho	Oklahoma	8	5
+New_Hampshire	Business	4	3
+Arkansas	Nevada	2	4
+Puerto_Rico	Business	6	5
+Montana	Arkansas	0	5
+Connecticut	Singapore	7	9
+Kentucky	Nevada	2	4
+Connecticut	Indiana	1	4
+Singapore	Nevada	5	5
+Kansas	Puerto_Rico	9	4
+Delaware	New_Hampshire	8	5
+Vermont	West_Virginia	1	7
+Idaho	Montana	3	4
+District_of_Columbia	Indiana	6	1
+Arkansas	Delaware	7	3
+South_Dakota	Delaware	6	2
+Delaware	Arkansas	5	9
+Business	Kentucky	4	6
+Connecticut	West_Virginia	0	8
+West_Virginia	Nevada	6	7
+Oklahoma	Oklahoma	8	0
+West_Virginia	Oklahoma	3	8
+Singapore	Puerto_Rico	6	7
+Kansas	Singapore	0	3
+West_Virginia	New_Hampshire	0	2
+Delaware	Delaware	4	6
+Vermont	Colorado	7	1
+New_Hampshire	Indiana	3	9
+Idaho	West_Virginia	1	7
+Oklahoma	Arkansas	5	6
+records successfully inserted
+Disk reads: 4 Disk writes: 78
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+3
+enter the inputs by giving space between them
+db cl C C== 2 500 c filescan 1 1   0 1
+[Ljava.lang.String;@57829d67
+deleted records stored in markdeletefile
+Disk reads: 74 Disk writes: 79
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between them
+db cl A,C C<=3    3 500 columnscan          filescan 1
+[Ljava.lang.String;@3cda1055
+[Kentucky,1,]
+[Puerto_Rico,0,]
+[Indiana,1,]
+[Business,0,]
+[Nevada,0,]
+[Colorado,0,]
+[Connecticut,1,]
+[Arkansas,0,]
+[Arkansas,1,]
+[Connecticut,0,]
+[Business,1,]
+[New_Hampshire,1,]
+[Idaho,0,]
+[Connecticut,1,]
+[Delaware,1,]
+[Nevada,1,]
+[New_Hampshire,1,]
+[Arkansas,1,]
+[Puerto_Rico,0,]
+[Vermont,1,]
+[Connecticut,0,]
+[District_of_Columbia,1,]
+[Delaware,1,]
+[Kentucky,1,]
+[Oklahoma,0,]
+[Business,0,]
+[Indiana,0,]
+[Business,0,]
+[West_Virginia,0,]
+[Montana,1,]
+[West_Virginia,0,]
+[Kentucky,0,]
+[Singapore,0,]
+[Idaho,1,]
+[Connecticut,0,]
+[Singapore,1,]
+[Oklahoma,0,]
+[South_Dakota,1,]
+[Connecticut,0,]
+[Puerto_Rico,1,]
+[Business,0,]
+[Nevada,0,]
+[District_of_Columbia,0,]
+[Singapore,1,]
+[Connecticut,0,]
+[Indiana,1,]
+[Idaho,0,]
+[Kentucky,0,]
+[Colorado,1,]
+[Montana,0,]
+[District_of_Columbia,0,]
+[Montana,0,]
+[Singapore,1,]
+[Nevada,0,]
+[Kentucky,0,]
+[Business,1,]
+[West_Virginia,0,]
+[Oklahoma,0,]
+[Colorado,0,]
+[Arkansas,1,]
+[West_Virginia,1,]
+[Delaware,0,]
+[District_of_Columbia,0,]
+[District_of_Columbia,0,]
+[Business,0,]
+[Puerto_Rico,0,]
+[Vermont,0,]
+[District_of_Columbia,1,]
+[Singapore,1,]
+[Nevada,0,]
+[New_Hampshire,1,]
+[Arkansas,0,]
+[Business,0,]
+[District_of_Columbia,0,]
+[Arkansas,1,]
+[Oklahoma,0,]
+[Kansas,1,]
+[Puerto_Rico,1,]
+[Montana,0,]
+[New_Hampshire,1,]
+[Idaho,1,]
+[Indiana,1,]
+[Indiana,0,]
+[Vermont,1,]
+[Indiana,0,]
+[Indiana,0,]
+[Arkansas,1,]
+[Vermont,1,]
+[Indiana,0,]
+[North_Dakota,0,]
+[Arkansas,0,]
+[Montana,0,]
+[District_of_Columbia,1,]
+[Puerto_Rico,1,]
+[Idaho,0,]
+[North_Dakota,1,]
+[Vermont,1,]
+[Colorado,1,]
+[New_Hampshire,1,]
+[Vermont,1,]
+[Oklahoma,0,]
+[Montana,0,]
+[Connecticut,1,]
+[Vermont,1,]
+[Connecticut,0,]
+[Kansas,0,]
+[West_Virginia,0,]
+[Idaho,1,]
+Disk reads: 65 Disk writes: 0
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+3
+enter the inputs by giving space between them
+db cl C C=1   3   1 500 columnscan 1 1
+[Ljava.lang.String;@3b81a1bc
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+deleted records stored in markdeletefile
+records deleted from markdeletefile
+Disk reads: 12 Disk writes: 69
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between them
+db cl A,C C<=3 c 500 clo  olumnscan 1
+[Ljava.lang.String;@4520ebad
+[Vermont,3,]
+[Puerto_Rico,0,]
+[Business,0,]
+[Nevada,0,]
+[Colorado,0,]
+[Delaware,3,]
+[Colorado,3,]
+[West_Virginia,3,]
+[Idaho,3,]
+[Oklahoma,3,]
+[Arkansas,0,]
+[Singapore,3,]
+[Connecticut,0,]
+[Business,3,]
+[Puerto_Rico,3,]
+[Indiana,3,]
+[Colorado,3,]
+[Idaho,0,]
+[Singapore,3,]
+[Idaho,3,]
+[Arkansas,3,]
+[Puerto_Rico,0,]
+[North_Dakota,3,]
+[Connecticut,0,]
+[South_Dakota,3,]
+[Oklahoma,0,]
+[Business,0,]
+[Indiana,0,]
+[Business,0,]
+[West_Virginia,0,]
+[Oklahoma,3,]
+[Singapore,3,]
+[Nevada,3,]
+[West_Virginia,0,]
+[New_Hampshire,3,]
+[Idaho,3,]
+[Kentucky,0,]
+[West_Virginia,3,]
+[Singapore,0,]
+[Idaho,3,]
+[West_Virginia,3,]
+[Connecticut,0,]
+[Montana,3,]
+[Oklahoma,0,]
+[Connecticut,0,]
+[North_Dakota,3,]
+[Arkansas,3,]
+[District_of_Columbia,3,]
+[Colorado,3,]
+[Nevada,3,]
+[Business,0,]
+[Nevada,0,]
+[District_of_Columbia,0,]
+[Connecticut,0,]
+[Idaho,0,]
+[Kansas,3,]
+[Kentucky,0,]
+[Montana,0,]
+[District_of_Columbia,0,]
+[District_of_Columbia,3,]
+[Montana,0,]
+[Nevada,0,]
+[Kentucky,0,]
+[Business,3,]
+[West_Virginia,0,]
+[Oklahoma,0,]
+[Colorado,0,]
+[Montana,3,]
+[West_Virginia,3,]
+[Business,3,]
+[Business,3,]
+[Delaware,0,]
+[District_of_Columbia,0,]
+[District_of_Columbia,0,]
+[Business,0,]
+[Puerto_Rico,0,]
+[Vermont,0,]
+[Nevada,0,]
+[Arkansas,0,]
+[Business,0,]
+[District_of_Columbia,0,]
+[Oklahoma,0,]
+[Montana,0,]
+[Oklahoma,3,]
+[New_Hampshire,3,]
+[Indiana,0,]
+[Vermont,3,]
+[Indiana,3,]
+[Indiana,0,]
+[North_Dakota,3,]
+[Indiana,0,]
+[Indiana,0,]
+[West_Virginia,3,]
+[North_Dakota,0,]
+[Nevada,3,]
+[Arkansas,0,]
+[Montana,0,]
+[Montana,3,]
+[Idaho,0,]
+[Oklahoma,0,]
+[Nevada,3,]
+[Montana,0,]
+[Idaho,3,]
+[Connecticut,0,]
+[West_Virginia,3,]
+[Kansas,0,]
+[West_Virginia,0,]
+[New_Hampshire,3,]
+Disk reads: 31 Disk writes: 0
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+1
+enter the inputs by giving space between them
+db cl c C btree 1
+[Ljava.lang.String;@5419f379
+0 0
+
+  Begin Index Test: 
+
+cl.2
+btree name: BTcl2
+headerPageId          90
+
+
+
+---------------The B+ Tree Structure---------------
+1     94
+2            91
+2            101
+2            96
+2            99
+2            92
+2            100
+2            95
+2            98
+2            102
+--------------- End ---------------
+
+
+printing leaf pages...
+
+
+
+---------------The B+ Tree Leaf Pages---------------
+
+**************To Print an Leaf Page ********
+Current Page ID: 91
+Left Link      : -1
+Right Link     : 101
+0 (key, [pageNo, slotNo]):   (0,  [ 13 12 ] )
+1 (key, [pageNo, slotNo]):   (0,  [ 13 14 ] )
+2 (key, [pageNo, slotNo]):   (0,  [ 13 15 ] )
+3 (key, [pageNo, slotNo]):   (0,  [ 13 21 ] )
+4 (key, [pageNo, slotNo]):   (0,  [ 13 38 ] )
+5 (key, [pageNo, slotNo]):   (0,  [ 13 52 ] )
+6 (key, [pageNo, slotNo]):   (0,  [ 13 71 ] )
+7 (key, [pageNo, slotNo]):   (0,  [ 13 102 ] )
+8 (key, [pageNo, slotNo]):   (0,  [ 13 111 ] )
+9 (key, [pageNo, slotNo]):   (0,  [ 27 2 ] )
+10 (key, [pageNo, slotNo]):   (0,  [ 27 4 ] )
+11 (key, [pageNo, slotNo]):   (0,  [ 27 5 ] )
+12 (key, [pageNo, slotNo]):   (0,  [ 27 7 ] )
+13 (key, [pageNo, slotNo]):   (0,  [ 27 11 ] )
+14 (key, [pageNo, slotNo]):   (0,  [ 27 20 ] )
+15 (key, [pageNo, slotNo]):   (0,  [ 27 25 ] )
+16 (key, [pageNo, slotNo]):   (0,  [ 27 31 ] )
+17 (key, [pageNo, slotNo]):   (0,  [ 27 37 ] )
+18 (key, [pageNo, slotNo]):   (0,  [ 27 47 ] )
+19 (key, [pageNo, slotNo]):   (0,  [ 27 49 ] )
+20 (key, [pageNo, slotNo]):   (0,  [ 27 80 ] )
+21 (key, [pageNo, slotNo]):   (0,  [ 27 88 ] )
+22 (key, [pageNo, slotNo]):   (0,  [ 27 92 ] )
+23 (key, [pageNo, slotNo]):   (0,  [ 27 97 ] )
+24 (key, [pageNo, slotNo]):   (0,  [ 27 114 ] )
+25 (key, [pageNo, slotNo]):   (0,  [ 27 117 ] )
+26 (key, [pageNo, slotNo]):   (0,  [ 27 122 ] )
+27 (key, [pageNo, slotNo]):   (0,  [ 27 124 ] )
+28 (key, [pageNo, slotNo]):   (0,  [ 43 3 ] )
+29 (key, [pageNo, slotNo]):   (0,  [ 43 12 ] )
+30 (key, [pageNo, slotNo]):   (0,  [ 43 14 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 101
+Left Link      : 91
+Right Link     : 96
+0 (key, [pageNo, slotNo]):   (0,  [ 43 24 ] )
+1 (key, [pageNo, slotNo]):   (0,  [ 43 25 ] )
+2 (key, [pageNo, slotNo]):   (0,  [ 43 32 ] )
+3 (key, [pageNo, slotNo]):   (0,  [ 43 65 ] )
+4 (key, [pageNo, slotNo]):   (0,  [ 43 67 ] )
+5 (key, [pageNo, slotNo]):   (0,  [ 43 69 ] )
+6 (key, [pageNo, slotNo]):   (0,  [ 43 70 ] )
+7 (key, [pageNo, slotNo]):   (0,  [ 43 74 ] )
+8 (key, [pageNo, slotNo]):   (0,  [ 43 78 ] )
+9 (key, [pageNo, slotNo]):   (0,  [ 43 81 ] )
+10 (key, [pageNo, slotNo]):   (0,  [ 43 83 ] )
+11 (key, [pageNo, slotNo]):   (0,  [ 43 85 ] )
+12 (key, [pageNo, slotNo]):   (0,  [ 43 87 ] )
+13 (key, [pageNo, slotNo]):   (0,  [ 43 92 ] )
+14 (key, [pageNo, slotNo]):   (0,  [ 43 113 ] )
+15 (key, [pageNo, slotNo]):   (0,  [ 59 2 ] )
+16 (key, [pageNo, slotNo]):   (0,  [ 59 26 ] )
+17 (key, [pageNo, slotNo]):   (0,  [ 59 30 ] )
+18 (key, [pageNo, slotNo]):   (0,  [ 59 37 ] )
+19 (key, [pageNo, slotNo]):   (0,  [ 59 42 ] )
+20 (key, [pageNo, slotNo]):   (0,  [ 59 51 ] )
+21 (key, [pageNo, slotNo]):   (0,  [ 59 56 ] )
+22 (key, [pageNo, slotNo]):   (0,  [ 59 77 ] )
+23 (key, [pageNo, slotNo]):   (0,  [ 59 88 ] )
+24 (key, [pageNo, slotNo]):   (0,  [ 59 100 ] )
+25 (key, [pageNo, slotNo]):   (0,  [ 59 114 ] )
+26 (key, [pageNo, slotNo]):   (0,  [ 59 119 ] )
+27 (key, [pageNo, slotNo]):   (0,  [ 59 120 ] )
+28 (key, [pageNo, slotNo]):   (3,  [ 13 11 ] )
+29 (key, [pageNo, slotNo]):   (3,  [ 13 23 ] )
+30 (key, [pageNo, slotNo]):   (3,  [ 13 28 ] )
+31 (key, [pageNo, slotNo]):   (3,  [ 13 32 ] )
+32 (key, [pageNo, slotNo]):   (3,  [ 13 36 ] )
+33 (key, [pageNo, slotNo]):   (3,  [ 13 37 ] )
+34 (key, [pageNo, slotNo]):   (3,  [ 13 48 ] )
+35 (key, [pageNo, slotNo]):   (3,  [ 13 63 ] )
+36 (key, [pageNo, slotNo]):   (3,  [ 13 64 ] )
+37 (key, [pageNo, slotNo]):   (3,  [ 13 67 ] )
+38 (key, [pageNo, slotNo]):   (3,  [ 13 70 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 96
+Left Link      : 101
+Right Link     : 99
+0 (key, [pageNo, slotNo]):   (3,  [ 13 73 ] )
+1 (key, [pageNo, slotNo]):   (3,  [ 13 86 ] )
+2 (key, [pageNo, slotNo]):   (3,  [ 13 92 ] )
+3 (key, [pageNo, slotNo]):   (3,  [ 13 104 ] )
+4 (key, [pageNo, slotNo]):   (3,  [ 13 124 ] )
+5 (key, [pageNo, slotNo]):   (3,  [ 27 13 ] )
+6 (key, [pageNo, slotNo]):   (3,  [ 27 16 ] )
+7 (key, [pageNo, slotNo]):   (3,  [ 27 18 ] )
+8 (key, [pageNo, slotNo]):   (3,  [ 27 22 ] )
+9 (key, [pageNo, slotNo]):   (3,  [ 27 24 ] )
+10 (key, [pageNo, slotNo]):   (3,  [ 27 30 ] )
+11 (key, [pageNo, slotNo]):   (3,  [ 27 34 ] )
+12 (key, [pageNo, slotNo]):   (3,  [ 27 35 ] )
+13 (key, [pageNo, slotNo]):   (3,  [ 27 38 ] )
+14 (key, [pageNo, slotNo]):   (3,  [ 27 64 ] )
+15 (key, [pageNo, slotNo]):   (3,  [ 27 66 ] )
+16 (key, [pageNo, slotNo]):   (3,  [ 27 67 ] )
+17 (key, [pageNo, slotNo]):   (3,  [ 27 70 ] )
+18 (key, [pageNo, slotNo]):   (3,  [ 27 74 ] )
+19 (key, [pageNo, slotNo]):   (3,  [ 27 115 ] )
+20 (key, [pageNo, slotNo]):   (3,  [ 43 0 ] )
+21 (key, [pageNo, slotNo]):   (3,  [ 43 22 ] )
+22 (key, [pageNo, slotNo]):   (3,  [ 43 41 ] )
+23 (key, [pageNo, slotNo]):   (3,  [ 43 47 ] )
+24 (key, [pageNo, slotNo]):   (3,  [ 43 62 ] )
+25 (key, [pageNo, slotNo]):   (3,  [ 43 64 ] )
+26 (key, [pageNo, slotNo]):   (3,  [ 43 116 ] )
+27 (key, [pageNo, slotNo]):   (3,  [ 59 0 ] )
+28 (key, [pageNo, slotNo]):   (3,  [ 59 8 ] )
+29 (key, [pageNo, slotNo]):   (3,  [ 59 20 ] )
+30 (key, [pageNo, slotNo]):   (3,  [ 59 29 ] )
+31 (key, [pageNo, slotNo]):   (3,  [ 59 39 ] )
+32 (key, [pageNo, slotNo]):   (3,  [ 59 46 ] )
+33 (key, [pageNo, slotNo]):   (3,  [ 59 63 ] )
+34 (key, [pageNo, slotNo]):   (3,  [ 59 93 ] )
+35 (key, [pageNo, slotNo]):   (3,  [ 59 108 ] )
+36 (key, [pageNo, slotNo]):   (3,  [ 59 117 ] )
+37 (key, [pageNo, slotNo]):   (3,  [ 59 123 ] )
+38 (key, [pageNo, slotNo]):   (4,  [ 13 3 ] )
+39 (key, [pageNo, slotNo]):   (4,  [ 13 20 ] )
+40 (key, [pageNo, slotNo]):   (4,  [ 13 25 ] )
+41 (key, [pageNo, slotNo]):   (4,  [ 13 57 ] )
+42 (key, [pageNo, slotNo]):   (4,  [ 13 66 ] )
+43 (key, [pageNo, slotNo]):   (4,  [ 13 78 ] )
+44 (key, [pageNo, slotNo]):   (4,  [ 13 116 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 99
+Left Link      : 96
+Right Link     : 92
+0 (key, [pageNo, slotNo]):   (4,  [ 13 121 ] )
+1 (key, [pageNo, slotNo]):   (4,  [ 27 33 ] )
+2 (key, [pageNo, slotNo]):   (4,  [ 27 39 ] )
+3 (key, [pageNo, slotNo]):   (4,  [ 27 60 ] )
+4 (key, [pageNo, slotNo]):   (4,  [ 27 68 ] )
+5 (key, [pageNo, slotNo]):   (4,  [ 27 71 ] )
+6 (key, [pageNo, slotNo]):   (4,  [ 27 81 ] )
+7 (key, [pageNo, slotNo]):   (4,  [ 27 87 ] )
+8 (key, [pageNo, slotNo]):   (4,  [ 27 90 ] )
+9 (key, [pageNo, slotNo]):   (4,  [ 27 91 ] )
+10 (key, [pageNo, slotNo]):   (4,  [ 27 96 ] )
+11 (key, [pageNo, slotNo]):   (4,  [ 27 102 ] )
+12 (key, [pageNo, slotNo]):   (4,  [ 27 103 ] )
+13 (key, [pageNo, slotNo]):   (4,  [ 27 110 ] )
+14 (key, [pageNo, slotNo]):   (4,  [ 27 113 ] )
+15 (key, [pageNo, slotNo]):   (4,  [ 27 118 ] )
+16 (key, [pageNo, slotNo]):   (4,  [ 43 7 ] )
+17 (key, [pageNo, slotNo]):   (4,  [ 43 9 ] )
+18 (key, [pageNo, slotNo]):   (4,  [ 43 18 ] )
+19 (key, [pageNo, slotNo]):   (4,  [ 43 20 ] )
+20 (key, [pageNo, slotNo]):   (4,  [ 43 34 ] )
+21 (key, [pageNo, slotNo]):   (4,  [ 43 39 ] )
+22 (key, [pageNo, slotNo]):   (4,  [ 43 43 ] )
+23 (key, [pageNo, slotNo]):   (4,  [ 43 44 ] )
+24 (key, [pageNo, slotNo]):   (4,  [ 43 54 ] )
+25 (key, [pageNo, slotNo]):   (4,  [ 43 55 ] )
+26 (key, [pageNo, slotNo]):   (4,  [ 43 61 ] )
+27 (key, [pageNo, slotNo]):   (4,  [ 43 104 ] )
+28 (key, [pageNo, slotNo]):   (4,  [ 43 108 ] )
+29 (key, [pageNo, slotNo]):   (4,  [ 43 112 ] )
+30 (key, [pageNo, slotNo]):   (4,  [ 43 114 ] )
+31 (key, [pageNo, slotNo]):   (4,  [ 59 50 ] )
+32 (key, [pageNo, slotNo]):   (4,  [ 59 60 ] )
+33 (key, [pageNo, slotNo]):   (4,  [ 59 62 ] )
+34 (key, [pageNo, slotNo]):   (4,  [ 59 65 ] )
+35 (key, [pageNo, slotNo]):   (4,  [ 59 89 ] )
+36 (key, [pageNo, slotNo]):   (4,  [ 59 91 ] )
+37 (key, [pageNo, slotNo]):   (4,  [ 59 95 ] )
+38 (key, [pageNo, slotNo]):   (4,  [ 59 97 ] )
+39 (key, [pageNo, slotNo]):   (4,  [ 59 113 ] )
+40 (key, [pageNo, slotNo]):   (4,  [ 59 121 ] )
+41 (key, [pageNo, slotNo]):   (5,  [ 13 34 ] )
+42 (key, [pageNo, slotNo]):   (5,  [ 13 44 ] )
+43 (key, [pageNo, slotNo]):   (5,  [ 13 51 ] )
+44 (key, [pageNo, slotNo]):   (5,  [ 13 54 ] )
+45 (key, [pageNo, slotNo]):   (5,  [ 13 74 ] )
+46 (key, [pageNo, slotNo]):   (5,  [ 13 83 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 92
+Left Link      : 99
+Right Link     : 100
+0 (key, [pageNo, slotNo]):   (5,  [ 13 84 ] )
+1 (key, [pageNo, slotNo]):   (5,  [ 13 99 ] )
+2 (key, [pageNo, slotNo]):   (5,  [ 13 109 ] )
+3 (key, [pageNo, slotNo]):   (5,  [ 13 114 ] )
+4 (key, [pageNo, slotNo]):   (5,  [ 13 118 ] )
+5 (key, [pageNo, slotNo]):   (5,  [ 27 3 ] )
+6 (key, [pageNo, slotNo]):   (5,  [ 27 6 ] )
+7 (key, [pageNo, slotNo]):   (5,  [ 27 26 ] )
+8 (key, [pageNo, slotNo]):   (5,  [ 27 32 ] )
+9 (key, [pageNo, slotNo]):   (5,  [ 27 54 ] )
+10 (key, [pageNo, slotNo]):   (5,  [ 27 79 ] )
+11 (key, [pageNo, slotNo]):   (5,  [ 27 82 ] )
+12 (key, [pageNo, slotNo]):   (5,  [ 27 104 ] )
+13 (key, [pageNo, slotNo]):   (5,  [ 27 119 ] )
+14 (key, [pageNo, slotNo]):   (5,  [ 43 11 ] )
+15 (key, [pageNo, slotNo]):   (5,  [ 43 17 ] )
+16 (key, [pageNo, slotNo]):   (5,  [ 43 19 ] )
+17 (key, [pageNo, slotNo]):   (5,  [ 43 27 ] )
+18 (key, [pageNo, slotNo]):   (5,  [ 43 31 ] )
+19 (key, [pageNo, slotNo]):   (5,  [ 43 36 ] )
+20 (key, [pageNo, slotNo]):   (5,  [ 43 53 ] )
+21 (key, [pageNo, slotNo]):   (5,  [ 43 68 ] )
+22 (key, [pageNo, slotNo]):   (5,  [ 43 72 ] )
+23 (key, [pageNo, slotNo]):   (5,  [ 43 89 ] )
+24 (key, [pageNo, slotNo]):   (5,  [ 43 111 ] )
+25 (key, [pageNo, slotNo]):   (5,  [ 43 123 ] )
+26 (key, [pageNo, slotNo]):   (5,  [ 59 16 ] )
+27 (key, [pageNo, slotNo]):   (5,  [ 59 28 ] )
+28 (key, [pageNo, slotNo]):   (5,  [ 59 31 ] )
+29 (key, [pageNo, slotNo]):   (5,  [ 59 32 ] )
+30 (key, [pageNo, slotNo]):   (5,  [ 59 53 ] )
+31 (key, [pageNo, slotNo]):   (5,  [ 59 57 ] )
+32 (key, [pageNo, slotNo]):   (5,  [ 59 68 ] )
+33 (key, [pageNo, slotNo]):   (5,  [ 59 71 ] )
+34 (key, [pageNo, slotNo]):   (5,  [ 59 74 ] )
+35 (key, [pageNo, slotNo]):   (5,  [ 59 79 ] )
+36 (key, [pageNo, slotNo]):   (5,  [ 59 81 ] )
+37 (key, [pageNo, slotNo]):   (5,  [ 59 84 ] )
+38 (key, [pageNo, slotNo]):   (5,  [ 59 104 ] )
+39 (key, [pageNo, slotNo]):   (5,  [ 59 112 ] )
+40 (key, [pageNo, slotNo]):   (5,  [ 75 0 ] )
+41 (key, [pageNo, slotNo]):   (6,  [ 13 0 ] )
+42 (key, [pageNo, slotNo]):   (6,  [ 13 6 ] )
+43 (key, [pageNo, slotNo]):   (6,  [ 13 18 ] )
+44 (key, [pageNo, slotNo]):   (6,  [ 13 24 ] )
+45 (key, [pageNo, slotNo]):   (6,  [ 13 45 ] )
+46 (key, [pageNo, slotNo]):   (6,  [ 13 46 ] )
+47 (key, [pageNo, slotNo]):   (6,  [ 13 50 ] )
+48 (key, [pageNo, slotNo]):   (6,  [ 13 56 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 100
+Left Link      : 92
+Right Link     : 95
+0 (key, [pageNo, slotNo]):   (6,  [ 13 65 ] )
+1 (key, [pageNo, slotNo]):   (6,  [ 13 82 ] )
+2 (key, [pageNo, slotNo]):   (6,  [ 13 89 ] )
+3 (key, [pageNo, slotNo]):   (6,  [ 13 103 ] )
+4 (key, [pageNo, slotNo]):   (6,  [ 13 107 ] )
+5 (key, [pageNo, slotNo]):   (6,  [ 13 110 ] )
+6 (key, [pageNo, slotNo]):   (6,  [ 27 45 ] )
+7 (key, [pageNo, slotNo]):   (6,  [ 27 46 ] )
+8 (key, [pageNo, slotNo]):   (6,  [ 27 57 ] )
+9 (key, [pageNo, slotNo]):   (6,  [ 27 61 ] )
+10 (key, [pageNo, slotNo]):   (6,  [ 27 77 ] )
+11 (key, [pageNo, slotNo]):   (6,  [ 27 84 ] )
+12 (key, [pageNo, slotNo]):   (6,  [ 27 99 ] )
+13 (key, [pageNo, slotNo]):   (6,  [ 27 109 ] )
+14 (key, [pageNo, slotNo]):   (6,  [ 27 111 ] )
+15 (key, [pageNo, slotNo]):   (6,  [ 43 30 ] )
+16 (key, [pageNo, slotNo]):   (6,  [ 43 33 ] )
+17 (key, [pageNo, slotNo]):   (6,  [ 43 38 ] )
+18 (key, [pageNo, slotNo]):   (6,  [ 43 58 ] )
+19 (key, [pageNo, slotNo]):   (6,  [ 43 63 ] )
+20 (key, [pageNo, slotNo]):   (6,  [ 43 84 ] )
+21 (key, [pageNo, slotNo]):   (6,  [ 43 86 ] )
+22 (key, [pageNo, slotNo]):   (6,  [ 43 93 ] )
+23 (key, [pageNo, slotNo]):   (6,  [ 43 98 ] )
+24 (key, [pageNo, slotNo]):   (6,  [ 43 99 ] )
+25 (key, [pageNo, slotNo]):   (6,  [ 43 103 ] )
+26 (key, [pageNo, slotNo]):   (6,  [ 43 107 ] )
+27 (key, [pageNo, slotNo]):   (6,  [ 43 110 ] )
+28 (key, [pageNo, slotNo]):   (6,  [ 43 119 ] )
+29 (key, [pageNo, slotNo]):   (6,  [ 43 124 ] )
+30 (key, [pageNo, slotNo]):   (6,  [ 59 3 ] )
+31 (key, [pageNo, slotNo]):   (6,  [ 59 5 ] )
+32 (key, [pageNo, slotNo]):   (6,  [ 59 12 ] )
+33 (key, [pageNo, slotNo]):   (6,  [ 59 17 ] )
+34 (key, [pageNo, slotNo]):   (6,  [ 59 18 ] )
+35 (key, [pageNo, slotNo]):   (6,  [ 59 25 ] )
+36 (key, [pageNo, slotNo]):   (6,  [ 59 33 ] )
+37 (key, [pageNo, slotNo]):   (6,  [ 59 38 ] )
+38 (key, [pageNo, slotNo]):   (6,  [ 59 48 ] )
+39 (key, [pageNo, slotNo]):   (6,  [ 59 67 ] )
+40 (key, [pageNo, slotNo]):   (6,  [ 59 72 ] )
+41 (key, [pageNo, slotNo]):   (6,  [ 59 75 ] )
+42 (key, [pageNo, slotNo]):   (6,  [ 59 76 ] )
+43 (key, [pageNo, slotNo]):   (6,  [ 59 94 ] )
+44 (key, [pageNo, slotNo]):   (6,  [ 59 99 ] )
+45 (key, [pageNo, slotNo]):   (6,  [ 59 109 ] )
+46 (key, [pageNo, slotNo]):   (6,  [ 59 111 ] )
+47 (key, [pageNo, slotNo]):   (6,  [ 59 115 ] )
+48 (key, [pageNo, slotNo]):   (6,  [ 59 118 ] )
+49 (key, [pageNo, slotNo]):   (7,  [ 13 22 ] )
+50 (key, [pageNo, slotNo]):   (7,  [ 13 33 ] )
+51 (key, [pageNo, slotNo]):   (7,  [ 13 42 ] )
+52 (key, [pageNo, slotNo]):   (7,  [ 13 85 ] )
+53 (key, [pageNo, slotNo]):   (7,  [ 13 87 ] )
+54 (key, [pageNo, slotNo]):   (7,  [ 13 97 ] )
+55 (key, [pageNo, slotNo]):   (7,  [ 13 100 ] )
+56 (key, [pageNo, slotNo]):   (7,  [ 13 113 ] )
+57 (key, [pageNo, slotNo]):   (7,  [ 13 120 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 95
+Left Link      : 100
+Right Link     : 98
+0 (key, [pageNo, slotNo]):   (7,  [ 27 8 ] )
+1 (key, [pageNo, slotNo]):   (7,  [ 27 14 ] )
+2 (key, [pageNo, slotNo]):   (7,  [ 27 15 ] )
+3 (key, [pageNo, slotNo]):   (7,  [ 27 17 ] )
+4 (key, [pageNo, slotNo]):   (7,  [ 27 19 ] )
+5 (key, [pageNo, slotNo]):   (7,  [ 27 27 ] )
+6 (key, [pageNo, slotNo]):   (7,  [ 27 29 ] )
+7 (key, [pageNo, slotNo]):   (7,  [ 27 53 ] )
+8 (key, [pageNo, slotNo]):   (7,  [ 27 56 ] )
+9 (key, [pageNo, slotNo]):   (7,  [ 27 58 ] )
+10 (key, [pageNo, slotNo]):   (7,  [ 27 59 ] )
+11 (key, [pageNo, slotNo]):   (7,  [ 27 72 ] )
+12 (key, [pageNo, slotNo]):   (7,  [ 27 75 ] )
+13 (key, [pageNo, slotNo]):   (7,  [ 27 83 ] )
+14 (key, [pageNo, slotNo]):   (7,  [ 27 108 ] )
+15 (key, [pageNo, slotNo]):   (7,  [ 27 120 ] )
+16 (key, [pageNo, slotNo]):   (7,  [ 43 1 ] )
+17 (key, [pageNo, slotNo]):   (7,  [ 43 5 ] )
+18 (key, [pageNo, slotNo]):   (7,  [ 43 8 ] )
+19 (key, [pageNo, slotNo]):   (7,  [ 43 15 ] )
+20 (key, [pageNo, slotNo]):   (7,  [ 43 51 ] )
+21 (key, [pageNo, slotNo]):   (7,  [ 43 57 ] )
+22 (key, [pageNo, slotNo]):   (7,  [ 43 66 ] )
+23 (key, [pageNo, slotNo]):   (7,  [ 43 77 ] )
+24 (key, [pageNo, slotNo]):   (7,  [ 43 90 ] )
+25 (key, [pageNo, slotNo]):   (7,  [ 43 105 ] )
+26 (key, [pageNo, slotNo]):   (7,  [ 43 122 ] )
+27 (key, [pageNo, slotNo]):   (7,  [ 59 1 ] )
+28 (key, [pageNo, slotNo]):   (7,  [ 59 10 ] )
+29 (key, [pageNo, slotNo]):   (7,  [ 59 13 ] )
+30 (key, [pageNo, slotNo]):   (7,  [ 59 19 ] )
+31 (key, [pageNo, slotNo]):   (7,  [ 59 27 ] )
+32 (key, [pageNo, slotNo]):   (7,  [ 59 44 ] )
+33 (key, [pageNo, slotNo]):   (7,  [ 59 47 ] )
+34 (key, [pageNo, slotNo]):   (7,  [ 59 49 ] )
+35 (key, [pageNo, slotNo]):   (7,  [ 59 87 ] )
+36 (key, [pageNo, slotNo]):   (7,  [ 59 101 ] )
+37 (key, [pageNo, slotNo]):   (7,  [ 59 110 ] )
+38 (key, [pageNo, slotNo]):   (7,  [ 59 122 ] )
+39 (key, [pageNo, slotNo]):   (8,  [ 13 1 ] )
+40 (key, [pageNo, slotNo]):   (8,  [ 13 5 ] )
+41 (key, [pageNo, slotNo]):   (8,  [ 13 9 ] )
+42 (key, [pageNo, slotNo]):   (8,  [ 13 16 ] )
+43 (key, [pageNo, slotNo]):   (8,  [ 13 40 ] )
+44 (key, [pageNo, slotNo]):   (8,  [ 13 53 ] )
+45 (key, [pageNo, slotNo]):   (8,  [ 13 58 ] )
+46 (key, [pageNo, slotNo]):   (8,  [ 13 76 ] )
+47 (key, [pageNo, slotNo]):   (8,  [ 13 80 ] )
+48 (key, [pageNo, slotNo]):   (8,  [ 13 115 ] )
+49 (key, [pageNo, slotNo]):   (8,  [ 27 9 ] )
+50 (key, [pageNo, slotNo]):   (8,  [ 27 10 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 98
+Left Link      : 95
+Right Link     : 102
+0 (key, [pageNo, slotNo]):   (8,  [ 27 41 ] )
+1 (key, [pageNo, slotNo]):   (8,  [ 27 51 ] )
+2 (key, [pageNo, slotNo]):   (8,  [ 27 52 ] )
+3 (key, [pageNo, slotNo]):   (8,  [ 27 55 ] )
+4 (key, [pageNo, slotNo]):   (8,  [ 27 85 ] )
+5 (key, [pageNo, slotNo]):   (8,  [ 27 89 ] )
+6 (key, [pageNo, slotNo]):   (8,  [ 27 116 ] )
+7 (key, [pageNo, slotNo]):   (8,  [ 43 6 ] )
+8 (key, [pageNo, slotNo]):   (8,  [ 43 13 ] )
+9 (key, [pageNo, slotNo]):   (8,  [ 43 28 ] )
+10 (key, [pageNo, slotNo]):   (8,  [ 43 40 ] )
+11 (key, [pageNo, slotNo]):   (8,  [ 43 45 ] )
+12 (key, [pageNo, slotNo]):   (8,  [ 43 50 ] )
+13 (key, [pageNo, slotNo]):   (8,  [ 43 76 ] )
+14 (key, [pageNo, slotNo]):   (8,  [ 43 94 ] )
+15 (key, [pageNo, slotNo]):   (8,  [ 43 95 ] )
+16 (key, [pageNo, slotNo]):   (8,  [ 43 106 ] )
+17 (key, [pageNo, slotNo]):   (8,  [ 43 118 ] )
+18 (key, [pageNo, slotNo]):   (8,  [ 59 9 ] )
+19 (key, [pageNo, slotNo]):   (8,  [ 59 15 ] )
+20 (key, [pageNo, slotNo]):   (8,  [ 59 43 ] )
+21 (key, [pageNo, slotNo]):   (8,  [ 59 52 ] )
+22 (key, [pageNo, slotNo]):   (8,  [ 59 59 ] )
+23 (key, [pageNo, slotNo]):   (8,  [ 59 66 ] )
+24 (key, [pageNo, slotNo]):   (8,  [ 59 70 ] )
+25 (key, [pageNo, slotNo]):   (8,  [ 59 96 ] )
+26 (key, [pageNo, slotNo]):   (8,  [ 59 106 ] )
+27 (key, [pageNo, slotNo]):   (8,  [ 59 116 ] )
+28 (key, [pageNo, slotNo]):   (9,  [ 13 10 ] )
+29 (key, [pageNo, slotNo]):   (9,  [ 13 26 ] )
+30 (key, [pageNo, slotNo]):   (9,  [ 13 29 ] )
+31 (key, [pageNo, slotNo]):   (9,  [ 13 47 ] )
+32 (key, [pageNo, slotNo]):   (9,  [ 13 59 ] )
+33 (key, [pageNo, slotNo]):   (9,  [ 13 69 ] )
+34 (key, [pageNo, slotNo]):   (9,  [ 13 77 ] )
+35 (key, [pageNo, slotNo]):   (9,  [ 13 90 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 102
+Left Link      : 98
+Right Link     : -1
+0 (key, [pageNo, slotNo]):   (9,  [ 13 91 ] )
+1 (key, [pageNo, slotNo]):   (9,  [ 13 106 ] )
+2 (key, [pageNo, slotNo]):   (9,  [ 27 1 ] )
+3 (key, [pageNo, slotNo]):   (9,  [ 27 23 ] )
+4 (key, [pageNo, slotNo]):   (9,  [ 27 28 ] )
+5 (key, [pageNo, slotNo]):   (9,  [ 27 42 ] )
+6 (key, [pageNo, slotNo]):   (9,  [ 27 50 ] )
+7 (key, [pageNo, slotNo]):   (9,  [ 27 62 ] )
+8 (key, [pageNo, slotNo]):   (9,  [ 27 69 ] )
+9 (key, [pageNo, slotNo]):   (9,  [ 27 86 ] )
+10 (key, [pageNo, slotNo]):   (9,  [ 27 93 ] )
+11 (key, [pageNo, slotNo]):   (9,  [ 27 95 ] )
+12 (key, [pageNo, slotNo]):   (9,  [ 27 98 ] )
+13 (key, [pageNo, slotNo]):   (9,  [ 27 107 ] )
+14 (key, [pageNo, slotNo]):   (9,  [ 27 123 ] )
+15 (key, [pageNo, slotNo]):   (9,  [ 43 16 ] )
+16 (key, [pageNo, slotNo]):   (9,  [ 43 26 ] )
+17 (key, [pageNo, slotNo]):   (9,  [ 43 59 ] )
+18 (key, [pageNo, slotNo]):   (9,  [ 43 60 ] )
+19 (key, [pageNo, slotNo]):   (9,  [ 43 71 ] )
+20 (key, [pageNo, slotNo]):   (9,  [ 43 101 ] )
+21 (key, [pageNo, slotNo]):   (9,  [ 43 102 ] )
+22 (key, [pageNo, slotNo]):   (9,  [ 43 109 ] )
+23 (key, [pageNo, slotNo]):   (9,  [ 59 7 ] )
+24 (key, [pageNo, slotNo]):   (9,  [ 59 21 ] )
+25 (key, [pageNo, slotNo]):   (9,  [ 59 22 ] )
+26 (key, [pageNo, slotNo]):   (9,  [ 59 36 ] )
+27 (key, [pageNo, slotNo]):   (9,  [ 59 40 ] )
+28 (key, [pageNo, slotNo]):   (9,  [ 59 45 ] )
+29 (key, [pageNo, slotNo]):   (9,  [ 59 54 ] )
+30 (key, [pageNo, slotNo]):   (9,  [ 59 61 ] )
+31 (key, [pageNo, slotNo]):   (9,  [ 59 73 ] )
+32 (key, [pageNo, slotNo]):   (9,  [ 59 90 ] )
+33 (key, [pageNo, slotNo]):   (9,  [ 59 105 ] )
+34 (key, [pageNo, slotNo]):   (11,  [ 43 29 ] )
+************** END ********
+
+
+
+------------- All Leaf Pages Have Been Printed --------
+
+
+created Btree index...
+end of test....
+Disk reads: 1 Disk writes: 13
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+3
+enter the inputs by giving space between them
+db cl C C C=3 500 btree 1 1
+[Ljava.lang.String;@6093dd95
+headerpageid
+90
+pageno
+90
+
+
+
+---------------The B+ Tree Structure---------------
+1     94
+2            91
+2            101
+2            96
+2            99
+2            92
+2            100
+2            95
+2            98
+2            102
+--------------- End ---------------
+
+
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+
+
+
+---------------The B+ Tree Structure---------------
+1     94
+2            91
+2            101
+2            96
+2            99
+2            92
+2            100
+2            95
+2            98
+2            102
+--------------- End ---------------
+
+
+printing leaf pages...
+
+
+
+---------------The B+ Tree Leaf Pages---------------
+
+**************To Print an Leaf Page ********
+Current Page ID: 91
+Left Link      : -1
+Right Link     : 101
+0 (key, [pageNo, slotNo]):   (0,  [ 13 12 ] )
+1 (key, [pageNo, slotNo]):   (0,  [ 13 14 ] )
+2 (key, [pageNo, slotNo]):   (0,  [ 13 15 ] )
+3 (key, [pageNo, slotNo]):   (0,  [ 13 21 ] )
+4 (key, [pageNo, slotNo]):   (0,  [ 13 38 ] )
+5 (key, [pageNo, slotNo]):   (0,  [ 13 52 ] )
+6 (key, [pageNo, slotNo]):   (0,  [ 13 71 ] )
+7 (key, [pageNo, slotNo]):   (0,  [ 13 102 ] )
+8 (key, [pageNo, slotNo]):   (0,  [ 13 111 ] )
+9 (key, [pageNo, slotNo]):   (0,  [ 27 2 ] )
+10 (key, [pageNo, slotNo]):   (0,  [ 27 4 ] )
+11 (key, [pageNo, slotNo]):   (0,  [ 27 5 ] )
+12 (key, [pageNo, slotNo]):   (0,  [ 27 7 ] )
+13 (key, [pageNo, slotNo]):   (0,  [ 27 11 ] )
+14 (key, [pageNo, slotNo]):   (0,  [ 27 20 ] )
+15 (key, [pageNo, slotNo]):   (0,  [ 27 25 ] )
+16 (key, [pageNo, slotNo]):   (0,  [ 27 31 ] )
+17 (key, [pageNo, slotNo]):   (0,  [ 27 37 ] )
+18 (key, [pageNo, slotNo]):   (0,  [ 27 47 ] )
+19 (key, [pageNo, slotNo]):   (0,  [ 27 49 ] )
+20 (key, [pageNo, slotNo]):   (0,  [ 27 80 ] )
+21 (key, [pageNo, slotNo]):   (0,  [ 27 88 ] )
+22 (key, [pageNo, slotNo]):   (0,  [ 27 92 ] )
+23 (key, [pageNo, slotNo]):   (0,  [ 27 97 ] )
+24 (key, [pageNo, slotNo]):   (0,  [ 27 114 ] )
+25 (key, [pageNo, slotNo]):   (0,  [ 27 117 ] )
+26 (key, [pageNo, slotNo]):   (0,  [ 27 122 ] )
+27 (key, [pageNo, slotNo]):   (0,  [ 27 124 ] )
+28 (key, [pageNo, slotNo]):   (0,  [ 43 3 ] )
+29 (key, [pageNo, slotNo]):   (0,  [ 43 12 ] )
+30 (key, [pageNo, slotNo]):   (0,  [ 43 14 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 101
+Left Link      : 91
+Right Link     : 96
+0 (key, [pageNo, slotNo]):   (0,  [ 43 24 ] )
+1 (key, [pageNo, slotNo]):   (0,  [ 43 25 ] )
+2 (key, [pageNo, slotNo]):   (0,  [ 43 32 ] )
+3 (key, [pageNo, slotNo]):   (0,  [ 43 65 ] )
+4 (key, [pageNo, slotNo]):   (0,  [ 43 67 ] )
+5 (key, [pageNo, slotNo]):   (0,  [ 43 69 ] )
+6 (key, [pageNo, slotNo]):   (0,  [ 43 70 ] )
+7 (key, [pageNo, slotNo]):   (0,  [ 43 74 ] )
+8 (key, [pageNo, slotNo]):   (0,  [ 43 78 ] )
+9 (key, [pageNo, slotNo]):   (0,  [ 43 81 ] )
+10 (key, [pageNo, slotNo]):   (0,  [ 43 83 ] )
+11 (key, [pageNo, slotNo]):   (0,  [ 43 85 ] )
+12 (key, [pageNo, slotNo]):   (0,  [ 43 87 ] )
+13 (key, [pageNo, slotNo]):   (0,  [ 43 92 ] )
+14 (key, [pageNo, slotNo]):   (0,  [ 43 113 ] )
+15 (key, [pageNo, slotNo]):   (0,  [ 59 2 ] )
+16 (key, [pageNo, slotNo]):   (0,  [ 59 26 ] )
+17 (key, [pageNo, slotNo]):   (0,  [ 59 30 ] )
+18 (key, [pageNo, slotNo]):   (0,  [ 59 37 ] )
+19 (key, [pageNo, slotNo]):   (0,  [ 59 42 ] )
+20 (key, [pageNo, slotNo]):   (0,  [ 59 51 ] )
+21 (key, [pageNo, slotNo]):   (0,  [ 59 56 ] )
+22 (key, [pageNo, slotNo]):   (0,  [ 59 77 ] )
+23 (key, [pageNo, slotNo]):   (0,  [ 59 88 ] )
+24 (key, [pageNo, slotNo]):   (0,  [ 59 100 ] )
+25 (key, [pageNo, slotNo]):   (0,  [ 59 114 ] )
+26 (key, [pageNo, slotNo]):   (0,  [ 59 119 ] )
+27 (key, [pageNo, slotNo]):   (0,  [ 59 120 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 96
+Left Link      : 101
+Right Link     : 99
+0 (key, [pageNo, slotNo]):   (4,  [ 13 3 ] )
+1 (key, [pageNo, slotNo]):   (4,  [ 13 20 ] )
+2 (key, [pageNo, slotNo]):   (4,  [ 13 25 ] )
+3 (key, [pageNo, slotNo]):   (4,  [ 13 57 ] )
+4 (key, [pageNo, slotNo]):   (4,  [ 13 66 ] )
+5 (key, [pageNo, slotNo]):   (4,  [ 13 78 ] )
+6 (key, [pageNo, slotNo]):   (4,  [ 13 116 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 99
+Left Link      : 96
+Right Link     : 92
+0 (key, [pageNo, slotNo]):   (4,  [ 13 121 ] )
+1 (key, [pageNo, slotNo]):   (4,  [ 27 33 ] )
+2 (key, [pageNo, slotNo]):   (4,  [ 27 39 ] )
+3 (key, [pageNo, slotNo]):   (4,  [ 27 60 ] )
+4 (key, [pageNo, slotNo]):   (4,  [ 27 68 ] )
+5 (key, [pageNo, slotNo]):   (4,  [ 27 71 ] )
+6 (key, [pageNo, slotNo]):   (4,  [ 27 81 ] )
+7 (key, [pageNo, slotNo]):   (4,  [ 27 87 ] )
+8 (key, [pageNo, slotNo]):   (4,  [ 27 90 ] )
+9 (key, [pageNo, slotNo]):   (4,  [ 27 91 ] )
+10 (key, [pageNo, slotNo]):   (4,  [ 27 96 ] )
+11 (key, [pageNo, slotNo]):   (4,  [ 27 102 ] )
+12 (key, [pageNo, slotNo]):   (4,  [ 27 103 ] )
+13 (key, [pageNo, slotNo]):   (4,  [ 27 110 ] )
+14 (key, [pageNo, slotNo]):   (4,  [ 27 113 ] )
+15 (key, [pageNo, slotNo]):   (4,  [ 27 118 ] )
+16 (key, [pageNo, slotNo]):   (4,  [ 43 7 ] )
+17 (key, [pageNo, slotNo]):   (4,  [ 43 9 ] )
+18 (key, [pageNo, slotNo]):   (4,  [ 43 18 ] )
+19 (key, [pageNo, slotNo]):   (4,  [ 43 20 ] )
+20 (key, [pageNo, slotNo]):   (4,  [ 43 34 ] )
+21 (key, [pageNo, slotNo]):   (4,  [ 43 39 ] )
+22 (key, [pageNo, slotNo]):   (4,  [ 43 43 ] )
+23 (key, [pageNo, slotNo]):   (4,  [ 43 44 ] )
+24 (key, [pageNo, slotNo]):   (4,  [ 43 54 ] )
+25 (key, [pageNo, slotNo]):   (4,  [ 43 55 ] )
+26 (key, [pageNo, slotNo]):   (4,  [ 43 61 ] )
+27 (key, [pageNo, slotNo]):   (4,  [ 43 104 ] )
+28 (key, [pageNo, slotNo]):   (4,  [ 43 108 ] )
+29 (key, [pageNo, slotNo]):   (4,  [ 43 112 ] )
+30 (key, [pageNo, slotNo]):   (4,  [ 43 114 ] )
+31 (key, [pageNo, slotNo]):   (4,  [ 59 50 ] )
+32 (key, [pageNo, slotNo]):   (4,  [ 59 60 ] )
+33 (key, [pageNo, slotNo]):   (4,  [ 59 62 ] )
+34 (key, [pageNo, slotNo]):   (4,  [ 59 65 ] )
+35 (key, [pageNo, slotNo]):   (4,  [ 59 89 ] )
+36 (key, [pageNo, slotNo]):   (4,  [ 59 91 ] )
+37 (key, [pageNo, slotNo]):   (4,  [ 59 95 ] )
+38 (key, [pageNo, slotNo]):   (4,  [ 59 97 ] )
+39 (key, [pageNo, slotNo]):   (4,  [ 59 113 ] )
+40 (key, [pageNo, slotNo]):   (4,  [ 59 121 ] )
+41 (key, [pageNo, slotNo]):   (5,  [ 13 34 ] )
+42 (key, [pageNo, slotNo]):   (5,  [ 13 44 ] )
+43 (key, [pageNo, slotNo]):   (5,  [ 13 51 ] )
+44 (key, [pageNo, slotNo]):   (5,  [ 13 54 ] )
+45 (key, [pageNo, slotNo]):   (5,  [ 13 74 ] )
+46 (key, [pageNo, slotNo]):   (5,  [ 13 83 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 92
+Left Link      : 99
+Right Link     : 100
+0 (key, [pageNo, slotNo]):   (5,  [ 13 84 ] )
+1 (key, [pageNo, slotNo]):   (5,  [ 13 99 ] )
+2 (key, [pageNo, slotNo]):   (5,  [ 13 109 ] )
+3 (key, [pageNo, slotNo]):   (5,  [ 13 114 ] )
+4 (key, [pageNo, slotNo]):   (5,  [ 13 118 ] )
+5 (key, [pageNo, slotNo]):   (5,  [ 27 3 ] )
+6 (key, [pageNo, slotNo]):   (5,  [ 27 6 ] )
+7 (key, [pageNo, slotNo]):   (5,  [ 27 26 ] )
+8 (key, [pageNo, slotNo]):   (5,  [ 27 32 ] )
+9 (key, [pageNo, slotNo]):   (5,  [ 27 54 ] )
+10 (key, [pageNo, slotNo]):   (5,  [ 27 79 ] )
+11 (key, [pageNo, slotNo]):   (5,  [ 27 82 ] )
+12 (key, [pageNo, slotNo]):   (5,  [ 27 104 ] )
+13 (key, [pageNo, slotNo]):   (5,  [ 27 119 ] )
+14 (key, [pageNo, slotNo]):   (5,  [ 43 11 ] )
+15 (key, [pageNo, slotNo]):   (5,  [ 43 17 ] )
+16 (key, [pageNo, slotNo]):   (5,  [ 43 19 ] )
+17 (key, [pageNo, slotNo]):   (5,  [ 43 27 ] )
+18 (key, [pageNo, slotNo]):   (5,  [ 43 31 ] )
+19 (key, [pageNo, slotNo]):   (5,  [ 43 36 ] )
+20 (key, [pageNo, slotNo]):   (5,  [ 43 53 ] )
+21 (key, [pageNo, slotNo]):   (5,  [ 43 68 ] )
+22 (key, [pageNo, slotNo]):   (5,  [ 43 72 ] )
+23 (key, [pageNo, slotNo]):   (5,  [ 43 89 ] )
+24 (key, [pageNo, slotNo]):   (5,  [ 43 111 ] )
+25 (key, [pageNo, slotNo]):   (5,  [ 43 123 ] )
+26 (key, [pageNo, slotNo]):   (5,  [ 59 16 ] )
+27 (key, [pageNo, slotNo]):   (5,  [ 59 28 ] )
+28 (key, [pageNo, slotNo]):   (5,  [ 59 31 ] )
+29 (key, [pageNo, slotNo]):   (5,  [ 59 32 ] )
+30 (key, [pageNo, slotNo]):   (5,  [ 59 53 ] )
+31 (key, [pageNo, slotNo]):   (5,  [ 59 57 ] )
+32 (key, [pageNo, slotNo]):   (5,  [ 59 68 ] )
+33 (key, [pageNo, slotNo]):   (5,  [ 59 71 ] )
+34 (key, [pageNo, slotNo]):   (5,  [ 59 74 ] )
+35 (key, [pageNo, slotNo]):   (5,  [ 59 79 ] )
+36 (key, [pageNo, slotNo]):   (5,  [ 59 81 ] )
+37 (key, [pageNo, slotNo]):   (5,  [ 59 84 ] )
+38 (key, [pageNo, slotNo]):   (5,  [ 59 104 ] )
+39 (key, [pageNo, slotNo]):   (5,  [ 59 112 ] )
+40 (key, [pageNo, slotNo]):   (5,  [ 75 0 ] )
+41 (key, [pageNo, slotNo]):   (6,  [ 13 0 ] )
+42 (key, [pageNo, slotNo]):   (6,  [ 13 6 ] )
+43 (key, [pageNo, slotNo]):   (6,  [ 13 18 ] )
+44 (key, [pageNo, slotNo]):   (6,  [ 13 24 ] )
+45 (key, [pageNo, slotNo]):   (6,  [ 13 45 ] )
+46 (key, [pageNo, slotNo]):   (6,  [ 13 46 ] )
+47 (key, [pageNo, slotNo]):   (6,  [ 13 50 ] )
+48 (key, [pageNo, slotNo]):   (6,  [ 13 56 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 100
+Left Link      : 92
+Right Link     : 95
+0 (key, [pageNo, slotNo]):   (6,  [ 13 65 ] )
+1 (key, [pageNo, slotNo]):   (6,  [ 13 82 ] )
+2 (key, [pageNo, slotNo]):   (6,  [ 13 89 ] )
+3 (key, [pageNo, slotNo]):   (6,  [ 13 103 ] )
+4 (key, [pageNo, slotNo]):   (6,  [ 13 107 ] )
+5 (key, [pageNo, slotNo]):   (6,  [ 13 110 ] )
+6 (key, [pageNo, slotNo]):   (6,  [ 27 45 ] )
+7 (key, [pageNo, slotNo]):   (6,  [ 27 46 ] )
+8 (key, [pageNo, slotNo]):   (6,  [ 27 57 ] )
+9 (key, [pageNo, slotNo]):   (6,  [ 27 61 ] )
+10 (key, [pageNo, slotNo]):   (6,  [ 27 77 ] )
+11 (key, [pageNo, slotNo]):   (6,  [ 27 84 ] )
+12 (key, [pageNo, slotNo]):   (6,  [ 27 99 ] )
+13 (key, [pageNo, slotNo]):   (6,  [ 27 109 ] )
+14 (key, [pageNo, slotNo]):   (6,  [ 27 111 ] )
+15 (key, [pageNo, slotNo]):   (6,  [ 43 30 ] )
+16 (key, [pageNo, slotNo]):   (6,  [ 43 33 ] )
+17 (key, [pageNo, slotNo]):   (6,  [ 43 38 ] )
+18 (key, [pageNo, slotNo]):   (6,  [ 43 58 ] )
+19 (key, [pageNo, slotNo]):   (6,  [ 43 63 ] )
+20 (key, [pageNo, slotNo]):   (6,  [ 43 84 ] )
+21 (key, [pageNo, slotNo]):   (6,  [ 43 86 ] )
+22 (key, [pageNo, slotNo]):   (6,  [ 43 93 ] )
+23 (key, [pageNo, slotNo]):   (6,  [ 43 98 ] )
+24 (key, [pageNo, slotNo]):   (6,  [ 43 99 ] )
+25 (key, [pageNo, slotNo]):   (6,  [ 43 103 ] )
+26 (key, [pageNo, slotNo]):   (6,  [ 43 107 ] )
+27 (key, [pageNo, slotNo]):   (6,  [ 43 110 ] )
+28 (key, [pageNo, slotNo]):   (6,  [ 43 119 ] )
+29 (key, [pageNo, slotNo]):   (6,  [ 43 124 ] )
+30 (key, [pageNo, slotNo]):   (6,  [ 59 3 ] )
+31 (key, [pageNo, slotNo]):   (6,  [ 59 5 ] )
+32 (key, [pageNo, slotNo]):   (6,  [ 59 12 ] )
+33 (key, [pageNo, slotNo]):   (6,  [ 59 17 ] )
+34 (key, [pageNo, slotNo]):   (6,  [ 59 18 ] )
+35 (key, [pageNo, slotNo]):   (6,  [ 59 25 ] )
+36 (key, [pageNo, slotNo]):   (6,  [ 59 33 ] )
+37 (key, [pageNo, slotNo]):   (6,  [ 59 38 ] )
+38 (key, [pageNo, slotNo]):   (6,  [ 59 48 ] )
+39 (key, [pageNo, slotNo]):   (6,  [ 59 67 ] )
+40 (key, [pageNo, slotNo]):   (6,  [ 59 72 ] )
+41 (key, [pageNo, slotNo]):   (6,  [ 59 75 ] )
+42 (key, [pageNo, slotNo]):   (6,  [ 59 76 ] )
+43 (key, [pageNo, slotNo]):   (6,  [ 59 94 ] )
+44 (key, [pageNo, slotNo]):   (6,  [ 59 99 ] )
+45 (key, [pageNo, slotNo]):   (6,  [ 59 109 ] )
+46 (key, [pageNo, slotNo]):   (6,  [ 59 111 ] )
+47 (key, [pageNo, slotNo]):   (6,  [ 59 115 ] )
+48 (key, [pageNo, slotNo]):   (6,  [ 59 118 ] )
+49 (key, [pageNo, slotNo]):   (7,  [ 13 22 ] )
+50 (key, [pageNo, slotNo]):   (7,  [ 13 33 ] )
+51 (key, [pageNo, slotNo]):   (7,  [ 13 42 ] )
+52 (key, [pageNo, slotNo]):   (7,  [ 13 85 ] )
+53 (key, [pageNo, slotNo]):   (7,  [ 13 87 ] )
+54 (key, [pageNo, slotNo]):   (7,  [ 13 97 ] )
+55 (key, [pageNo, slotNo]):   (7,  [ 13 100 ] )
+56 (key, [pageNo, slotNo]):   (7,  [ 13 113 ] )
+57 (key, [pageNo, slotNo]):   (7,  [ 13 120 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 95
+Left Link      : 100
+Right Link     : 98
+0 (key, [pageNo, slotNo]):   (7,  [ 27 8 ] )
+1 (key, [pageNo, slotNo]):   (7,  [ 27 14 ] )
+2 (key, [pageNo, slotNo]):   (7,  [ 27 15 ] )
+3 (key, [pageNo, slotNo]):   (7,  [ 27 17 ] )
+4 (key, [pageNo, slotNo]):   (7,  [ 27 19 ] )
+5 (key, [pageNo, slotNo]):   (7,  [ 27 27 ] )
+6 (key, [pageNo, slotNo]):   (7,  [ 27 29 ] )
+7 (key, [pageNo, slotNo]):   (7,  [ 27 53 ] )
+8 (key, [pageNo, slotNo]):   (7,  [ 27 56 ] )
+9 (key, [pageNo, slotNo]):   (7,  [ 27 58 ] )
+10 (key, [pageNo, slotNo]):   (7,  [ 27 59 ] )
+11 (key, [pageNo, slotNo]):   (7,  [ 27 72 ] )
+12 (key, [pageNo, slotNo]):   (7,  [ 27 75 ] )
+13 (key, [pageNo, slotNo]):   (7,  [ 27 83 ] )
+14 (key, [pageNo, slotNo]):   (7,  [ 27 108 ] )
+15 (key, [pageNo, slotNo]):   (7,  [ 27 120 ] )
+16 (key, [pageNo, slotNo]):   (7,  [ 43 1 ] )
+17 (key, [pageNo, slotNo]):   (7,  [ 43 5 ] )
+18 (key, [pageNo, slotNo]):   (7,  [ 43 8 ] )
+19 (key, [pageNo, slotNo]):   (7,  [ 43 15 ] )
+20 (key, [pageNo, slotNo]):   (7,  [ 43 51 ] )
+21 (key, [pageNo, slotNo]):   (7,  [ 43 57 ] )
+22 (key, [pageNo, slotNo]):   (7,  [ 43 66 ] )
+23 (key, [pageNo, slotNo]):   (7,  [ 43 77 ] )
+24 (key, [pageNo, slotNo]):   (7,  [ 43 90 ] )
+25 (key, [pageNo, slotNo]):   (7,  [ 43 105 ] )
+26 (key, [pageNo, slotNo]):   (7,  [ 43 122 ] )
+27 (key, [pageNo, slotNo]):   (7,  [ 59 1 ] )
+28 (key, [pageNo, slotNo]):   (7,  [ 59 10 ] )
+29 (key, [pageNo, slotNo]):   (7,  [ 59 13 ] )
+30 (key, [pageNo, slotNo]):   (7,  [ 59 19 ] )
+31 (key, [pageNo, slotNo]):   (7,  [ 59 27 ] )
+32 (key, [pageNo, slotNo]):   (7,  [ 59 44 ] )
+33 (key, [pageNo, slotNo]):   (7,  [ 59 47 ] )
+34 (key, [pageNo, slotNo]):   (7,  [ 59 49 ] )
+35 (key, [pageNo, slotNo]):   (7,  [ 59 87 ] )
+36 (key, [pageNo, slotNo]):   (7,  [ 59 101 ] )
+37 (key, [pageNo, slotNo]):   (7,  [ 59 110 ] )
+38 (key, [pageNo, slotNo]):   (7,  [ 59 122 ] )
+39 (key, [pageNo, slotNo]):   (8,  [ 13 1 ] )
+40 (key, [pageNo, slotNo]):   (8,  [ 13 5 ] )
+41 (key, [pageNo, slotNo]):   (8,  [ 13 9 ] )
+42 (key, [pageNo, slotNo]):   (8,  [ 13 16 ] )
+43 (key, [pageNo, slotNo]):   (8,  [ 13 40 ] )
+44 (key, [pageNo, slotNo]):   (8,  [ 13 53 ] )
+45 (key, [pageNo, slotNo]):   (8,  [ 13 58 ] )
+46 (key, [pageNo, slotNo]):   (8,  [ 13 76 ] )
+47 (key, [pageNo, slotNo]):   (8,  [ 13 80 ] )
+48 (key, [pageNo, slotNo]):   (8,  [ 13 115 ] )
+49 (key, [pageNo, slotNo]):   (8,  [ 27 9 ] )
+50 (key, [pageNo, slotNo]):   (8,  [ 27 10 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 98
+Left Link      : 95
+Right Link     : 102
+0 (key, [pageNo, slotNo]):   (8,  [ 27 41 ] )
+1 (key, [pageNo, slotNo]):   (8,  [ 27 51 ] )
+2 (key, [pageNo, slotNo]):   (8,  [ 27 52 ] )
+3 (key, [pageNo, slotNo]):   (8,  [ 27 55 ] )
+4 (key, [pageNo, slotNo]):   (8,  [ 27 85 ] )
+5 (key, [pageNo, slotNo]):   (8,  [ 27 89 ] )
+6 (key, [pageNo, slotNo]):   (8,  [ 27 116 ] )
+7 (key, [pageNo, slotNo]):   (8,  [ 43 6 ] )
+8 (key, [pageNo, slotNo]):   (8,  [ 43 13 ] )
+9 (key, [pageNo, slotNo]):   (8,  [ 43 28 ] )
+10 (key, [pageNo, slotNo]):   (8,  [ 43 40 ] )
+11 (key, [pageNo, slotNo]):   (8,  [ 43 45 ] )
+12 (key, [pageNo, slotNo]):   (8,  [ 43 50 ] )
+13 (key, [pageNo, slotNo]):   (8,  [ 43 76 ] )
+14 (key, [pageNo, slotNo]):   (8,  [ 43 94 ] )
+15 (key, [pageNo, slotNo]):   (8,  [ 43 95 ] )
+16 (key, [pageNo, slotNo]):   (8,  [ 43 106 ] )
+17 (key, [pageNo, slotNo]):   (8,  [ 43 118 ] )
+18 (key, [pageNo, slotNo]):   (8,  [ 59 9 ] )
+19 (key, [pageNo, slotNo]):   (8,  [ 59 15 ] )
+20 (key, [pageNo, slotNo]):   (8,  [ 59 43 ] )
+21 (key, [pageNo, slotNo]):   (8,  [ 59 52 ] )
+22 (key, [pageNo, slotNo]):   (8,  [ 59 59 ] )
+23 (key, [pageNo, slotNo]):   (8,  [ 59 66 ] )
+24 (key, [pageNo, slotNo]):   (8,  [ 59 70 ] )
+25 (key, [pageNo, slotNo]):   (8,  [ 59 96 ] )
+26 (key, [pageNo, slotNo]):   (8,  [ 59 106 ] )
+27 (key, [pageNo, slotNo]):   (8,  [ 59 116 ] )
+28 (key, [pageNo, slotNo]):   (9,  [ 13 10 ] )
+29 (key, [pageNo, slotNo]):   (9,  [ 13 26 ] )
+30 (key, [pageNo, slotNo]):   (9,  [ 13 29 ] )
+31 (key, [pageNo, slotNo]):   (9,  [ 13 47 ] )
+32 (key, [pageNo, slotNo]):   (9,  [ 13 59 ] )
+33 (key, [pageNo, slotNo]):   (9,  [ 13 69 ] )
+34 (key, [pageNo, slotNo]):   (9,  [ 13 77 ] )
+35 (key, [pageNo, slotNo]):   (9,  [ 13 90 ] )
+************** END ********
+
+
+**************To Print an Leaf Page ********
+Current Page ID: 102
+Left Link      : 98
+Right Link     : -1
+0 (key, [pageNo, slotNo]):   (9,  [ 13 91 ] )
+1 (key, [pageNo, slotNo]):   (9,  [ 13 106 ] )
+2 (key, [pageNo, slotNo]):   (9,  [ 27 1 ] )
+3 (key, [pageNo, slotNo]):   (9,  [ 27 23 ] )
+4 (key, [pageNo, slotNo]):   (9,  [ 27 28 ] )
+5 (key, [pageNo, slotNo]):   (9,  [ 27 42 ] )
+6 (key, [pageNo, slotNo]):   (9,  [ 27 50 ] )
+7 (key, [pageNo, slotNo]):   (9,  [ 27 62 ] )
+8 (key, [pageNo, slotNo]):   (9,  [ 27 69 ] )
+9 (key, [pageNo, slotNo]):   (9,  [ 27 86 ] )
+10 (key, [pageNo, slotNo]):   (9,  [ 27 93 ] )
+11 (key, [pageNo, slotNo]):   (9,  [ 27 95 ] )
+12 (key, [pageNo, slotNo]):   (9,  [ 27 98 ] )
+13 (key, [pageNo, slotNo]):   (9,  [ 27 107 ] )
+14 (key, [pageNo, slotNo]):   (9,  [ 27 123 ] )
+15 (key, [pageNo, slotNo]):   (9,  [ 43 16 ] )
+16 (key, [pageNo, slotNo]):   (9,  [ 43 26 ] )
+17 (key, [pageNo, slotNo]):   (9,  [ 43 59 ] )
+18 (key, [pageNo, slotNo]):   (9,  [ 43 60 ] )
+19 (key, [pageNo, slotNo]):   (9,  [ 43 71 ] )
+20 (key, [pageNo, slotNo]):   (9,  [ 43 101 ] )
+21 (key, [pageNo, slotNo]):   (9,  [ 43 102 ] )
+22 (key, [pageNo, slotNo]):   (9,  [ 43 109 ] )
+23 (key, [pageNo, slotNo]):   (9,  [ 59 7 ] )
+24 (key, [pageNo, slotNo]):   (9,  [ 59 21 ] )
+25 (key, [pageNo, slotNo]):   (9,  [ 59 22 ] )
+26 (key, [pageNo, slotNo]):   (9,  [ 59 36 ] )
+27 (key, [pageNo, slotNo]):   (9,  [ 59 40 ] )
+28 (key, [pageNo, slotNo]):   (9,  [ 59 45 ] )
+29 (key, [pageNo, slotNo]):   (9,  [ 59 54 ] )
+30 (key, [pageNo, slotNo]):   (9,  [ 59 61 ] )
+31 (key, [pageNo, slotNo]):   (9,  [ 59 73 ] )
+32 (key, [pageNo, slotNo]):   (9,  [ 59 90 ] )
+33 (key, [pageNo, slotNo]):   (9,  [ 59 105 ] )
+34 (key, [pageNo, slotNo]):   (11,  [ 43 29 ] )
+************** END ********
+
+
+
+------------- All Leaf Pages Have Been Printed --------
+
+
+deleted records stored in markdeletefile
+records deleted from markdeletefile
+AT THE END OF SCAN!
+Disk reads: 48 Disk writes: 74
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2 2
+enter the inputs by giving space between them
+db cl A,C C<5 4 500 btree 1
+[Ljava.lang.String;@754ba872
+headerpageid
+90
+pageno
+90
+[Puerto_Rico,0,]
+[Business,0,]
+[Nevada,0,]
+[Colorado,0,]
+[Arkansas,0,]
+[Connecticut,0,]
+[Idaho,0,]
+[Puerto_Rico,0,]
+[Connecticut,0,]
+[Oklahoma,0,]
+[Business,0,]
+[Indiana,0,]
+[Business,0,]
+[West_Virginia,0,]
+[West_Virginia,0,]
+[Kentucky,0,]
+[Singapore,0,]
+[Connecticut,0,]
+[Oklahoma,0,]
+[Connecticut,0,]
+[Business,0,]
+[Nevada,0,]
+[District_of_Columbia,0,]
+[Connecticut,0,]
+[Idaho,0,]
+[Kentucky,0,]
+[Montana,0,]
+[District_of_Columbia,0,]
+[Montana,0,]
+[Nevada,0,]
+[Kentucky,0,]
+[West_Virginia,0,]
+[Oklahoma,0,]
+[Colorado,0,]
+[Delaware,0,]
+[District_of_Columbia,0,]
+[District_of_Columbia,0,]
+[Business,0,]
+[Puerto_Rico,0,]
+[Vermont,0,]
+[Nevada,0,]
+[Arkansas,0,]
+[Business,0,]
+[District_of_Columbia,0,]
+[Oklahoma,0,]
+[Montana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[North_Dakota,0,]
+[Arkansas,0,]
+[Montana,0,]
+[Idaho,0,]
+[Oklahoma,0,]
+[Montana,0,]
+[Connecticut,0,]
+[Kansas,0,]
+[West_Virginia,0,]
+AT THE END OF SCAN!
+Disk reads: 39 Disk writes: 9
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+1
+enter the inputs by giving space between them
+db cl C C   bitmap 1
+[Ljava.lang.String;@146ba0ac
+0 0
+
+  Begin Index Test: 
+
+cl.2
+BM!cl!2!6
+Printing Bitmap contents: 
+bitmap value at position '1': 1
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 1
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 1
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 1
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 1
+bitmap value at position '27': 1
+bitmap value at position '28': 0
+bitmap value at position '29': 1
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 1
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 1
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 1
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 1
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 1
+bitmap value at position '60': 0
+bitmap value at position '61': 1
+bitmap value at position '62': 0
+bitmap value at position '63': 1
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 1
+bitmap value at position '102': 1
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 1
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 1
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 1
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 1
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 1
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 1
+bitmap value at position '150': 0
+bitmap value at position '151': 1
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 1
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 1
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 1
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 1
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 1
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 1
+bitmap value at position '223': 0
+bitmap value at position '224': 1
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 1
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 1
+bitmap value at position '233': 1
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 1
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 1
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 1
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 1
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 1
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 1
+bitmap value at position '256': 1
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 1
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 1
+bitmap value at position '265': 1
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 1
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 1
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 1
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 1
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 1
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 1
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 1
+bitmap value at position '309': 1
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 1
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 1
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 1
+bitmap value at position '330': 0
+bitmap value at position '331': 1
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 1
+bitmap value at position '336': 0
+bitmap value at position '337': 1
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!8
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 1
+bitmap value at position '3': 0
+bitmap value at position '4': 1
+bitmap value at position '5': 0
+bitmap value at position '6': 1
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 1
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 1
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 1
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 1
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 1
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 1
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 1
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 1
+bitmap value at position '81': 1
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 1
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 1
+bitmap value at position '107': 1
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 1
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 1
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 1
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 1
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 1
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 1
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 1
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 1
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 1
+bitmap value at position '197': 1
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 1
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 1
+bitmap value at position '231': 1
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 1
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 1
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 1
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 1
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 1
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 1
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 1
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 1
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 1
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 1
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 1
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 1
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!4
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 1
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 1
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 1
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 1
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 1
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 1
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 1
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 1
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 1
+bitmap value at position '97': 0
+bitmap value at position '98': 1
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 1
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 1
+bitmap value at position '119': 0
+bitmap value at position '120': 1
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 1
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 1
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 1
+bitmap value at position '136': 1
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 1
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 1
+bitmap value at position '145': 1
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 1
+bitmap value at position '151': 0
+bitmap value at position '152': 1
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 1
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 1
+bitmap value at position '167': 0
+bitmap value at position '168': 1
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 1
+bitmap value at position '177': 0
+bitmap value at position '178': 1
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 1
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 1
+bitmap value at position '193': 0
+bitmap value at position '194': 1
+bitmap value at position '195': 1
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 1
+bitmap value at position '201': 1
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 1
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 1
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 1
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 1
+bitmap value at position '246': 0
+bitmap value at position '247': 1
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 1
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 1
+bitmap value at position '297': 0
+bitmap value at position '298': 1
+bitmap value at position '299': 1
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 1
+bitmap value at position '317': 0
+bitmap value at position '318': 1
+bitmap value at position '319': 0
+bitmap value at position '320': 1
+bitmap value at position '321': 0
+bitmap value at position '322': 1
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 1
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 1
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!8
+BM!cl!2!9
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 1
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 1
+bitmap value at position '19': 1
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 1
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 1
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 1
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 1
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 1
+bitmap value at position '54': 1
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 1
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 1
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 1
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 1
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 1
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 1
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 1
+bitmap value at position '118': 0
+bitmap value at position '119': 1
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 1
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 1
+bitmap value at position '139': 1
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 1
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 1
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 1
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 1
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 1
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 1
+bitmap value at position '205': 1
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 1
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 1
+bitmap value at position '235': 1
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 1
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 1
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 1
+bitmap value at position '268': 1
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 1
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 1
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 1
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 1
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 1
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 1
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 1
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 1
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!0
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 1
+bitmap value at position '9': 1
+bitmap value at position '10': 1
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 1
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 1
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 1
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 1
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 1
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 1
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 1
+bitmap value at position '74': 0
+bitmap value at position '75': 1
+bitmap value at position '76': 1
+bitmap value at position '77': 0
+bitmap value at position '78': 1
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 1
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 1
+bitmap value at position '88': 0
+bitmap value at position '89': 1
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 1
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 1
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 1
+bitmap value at position '104': 1
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 1
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 1
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 1
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 1
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 1
+bitmap value at position '154': 0
+bitmap value at position '155': 1
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 1
+bitmap value at position '160': 0
+bitmap value at position '161': 1
+bitmap value at position '162': 0
+bitmap value at position '163': 1
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 1
+bitmap value at position '171': 0
+bitmap value at position '172': 1
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 1
+bitmap value at position '180': 1
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 1
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 1
+bitmap value at position '209': 0
+bitmap value at position '210': 1
+bitmap value at position '211': 0
+bitmap value at position '212': 1
+bitmap value at position '213': 1
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 1
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 1
+bitmap value at position '220': 1
+bitmap value at position '221': 1
+bitmap value at position '222': 0
+bitmap value at position '223': 1
+bitmap value at position '224': 0
+bitmap value at position '225': 1
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 1
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 1
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 1
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 1
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 1
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 1
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 1
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 1
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 1
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 1
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 1
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 1
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 1
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 1
+bitmap value at position '339': 1
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!7
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 1
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 1
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 1
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 1
+bitmap value at position '51': 1
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 1
+bitmap value at position '56': 0
+bitmap value at position '57': 1
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 1
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 1
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 1
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 1
+bitmap value at position '84': 1
+bitmap value at position '85': 1
+bitmap value at position '86': 1
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 1
+bitmap value at position '92': 0
+bitmap value at position '93': 1
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 1
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 1
+bitmap value at position '112': 0
+bitmap value at position '113': 1
+bitmap value at position '114': 1
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 1
+bitmap value at position '122': 1
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 1
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 1
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 1
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 1
+bitmap value at position '163': 0
+bitmap value at position '164': 1
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 1
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 1
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 1
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 1
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 1
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 1
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 1
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 1
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 1
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 1
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 1
+bitmap value at position '260': 0
+bitmap value at position '261': 1
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 1
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 1
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 1
+bitmap value at position '284': 0
+bitmap value at position '285': 1
+bitmap value at position '286': 0
+bitmap value at position '287': 1
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 1
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 1
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 1
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 1
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!7
+BM!cl!2!5
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 1
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 1
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 1
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 1
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 1
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 1
+bitmap value at position '49': 1
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 1
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 1
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 1
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 1
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 1
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 1
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 1
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 1
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 1
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 1
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 1
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 1
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 1
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 1
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 1
+bitmap value at position '176': 0
+bitmap value at position '177': 1
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 1
+bitmap value at position '183': 0
+bitmap value at position '184': 0
+bitmap value at position '185': 0
+bitmap value at position '186': 1
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 1
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 1
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 1
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 1
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 1
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 1
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 1
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 1
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 1
+bitmap value at position '273': 0
+bitmap value at position '274': 1
+bitmap value at position '275': 1
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 1
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 1
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 1
+bitmap value at position '303': 0
+bitmap value at position '304': 1
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 1
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 1
+bitmap value at position '312': 1
+bitmap value at position '313': 1
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 1
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 1
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 1
+created Bitmap index...
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!8
+BM!cl!2!8
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!9
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!8
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!4
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!7
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!8
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!9
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!7
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!9
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!11
+Printing Bitmap contents: 
+bitmap value at position '1': 0
+bitmap value at position '2': 0
+bitmap value at position '3': 0
+bitmap value at position '4': 0
+bitmap value at position '5': 0
+bitmap value at position '6': 0
+bitmap value at position '7': 0
+bitmap value at position '8': 0
+bitmap value at position '9': 0
+bitmap value at position '10': 0
+bitmap value at position '11': 0
+bitmap value at position '12': 0
+bitmap value at position '13': 0
+bitmap value at position '14': 0
+bitmap value at position '15': 0
+bitmap value at position '16': 0
+bitmap value at position '17': 0
+bitmap value at position '18': 0
+bitmap value at position '19': 0
+bitmap value at position '20': 0
+bitmap value at position '21': 0
+bitmap value at position '22': 0
+bitmap value at position '23': 0
+bitmap value at position '24': 0
+bitmap value at position '25': 0
+bitmap value at position '26': 0
+bitmap value at position '27': 0
+bitmap value at position '28': 0
+bitmap value at position '29': 0
+bitmap value at position '30': 0
+bitmap value at position '31': 0
+bitmap value at position '32': 0
+bitmap value at position '33': 0
+bitmap value at position '34': 0
+bitmap value at position '35': 0
+bitmap value at position '36': 0
+bitmap value at position '37': 0
+bitmap value at position '38': 0
+bitmap value at position '39': 0
+bitmap value at position '40': 0
+bitmap value at position '41': 0
+bitmap value at position '42': 0
+bitmap value at position '43': 0
+bitmap value at position '44': 0
+bitmap value at position '45': 0
+bitmap value at position '46': 0
+bitmap value at position '47': 0
+bitmap value at position '48': 0
+bitmap value at position '49': 0
+bitmap value at position '50': 0
+bitmap value at position '51': 0
+bitmap value at position '52': 0
+bitmap value at position '53': 0
+bitmap value at position '54': 0
+bitmap value at position '55': 0
+bitmap value at position '56': 0
+bitmap value at position '57': 0
+bitmap value at position '58': 0
+bitmap value at position '59': 0
+bitmap value at position '60': 0
+bitmap value at position '61': 0
+bitmap value at position '62': 0
+bitmap value at position '63': 0
+bitmap value at position '64': 0
+bitmap value at position '65': 0
+bitmap value at position '66': 0
+bitmap value at position '67': 0
+bitmap value at position '68': 0
+bitmap value at position '69': 0
+bitmap value at position '70': 0
+bitmap value at position '71': 0
+bitmap value at position '72': 0
+bitmap value at position '73': 0
+bitmap value at position '74': 0
+bitmap value at position '75': 0
+bitmap value at position '76': 0
+bitmap value at position '77': 0
+bitmap value at position '78': 0
+bitmap value at position '79': 0
+bitmap value at position '80': 0
+bitmap value at position '81': 0
+bitmap value at position '82': 0
+bitmap value at position '83': 0
+bitmap value at position '84': 0
+bitmap value at position '85': 0
+bitmap value at position '86': 0
+bitmap value at position '87': 0
+bitmap value at position '88': 0
+bitmap value at position '89': 0
+bitmap value at position '90': 0
+bitmap value at position '91': 0
+bitmap value at position '92': 0
+bitmap value at position '93': 0
+bitmap value at position '94': 0
+bitmap value at position '95': 0
+bitmap value at position '96': 0
+bitmap value at position '97': 0
+bitmap value at position '98': 0
+bitmap value at position '99': 0
+bitmap value at position '100': 0
+bitmap value at position '101': 0
+bitmap value at position '102': 0
+bitmap value at position '103': 0
+bitmap value at position '104': 0
+bitmap value at position '105': 0
+bitmap value at position '106': 0
+bitmap value at position '107': 0
+bitmap value at position '108': 0
+bitmap value at position '109': 0
+bitmap value at position '110': 0
+bitmap value at position '111': 0
+bitmap value at position '112': 0
+bitmap value at position '113': 0
+bitmap value at position '114': 0
+bitmap value at position '115': 0
+bitmap value at position '116': 0
+bitmap value at position '117': 0
+bitmap value at position '118': 0
+bitmap value at position '119': 0
+bitmap value at position '120': 0
+bitmap value at position '121': 0
+bitmap value at position '122': 0
+bitmap value at position '123': 0
+bitmap value at position '124': 0
+bitmap value at position '125': 0
+bitmap value at position '126': 0
+bitmap value at position '127': 0
+bitmap value at position '128': 0
+bitmap value at position '129': 0
+bitmap value at position '130': 0
+bitmap value at position '131': 0
+bitmap value at position '132': 0
+bitmap value at position '133': 0
+bitmap value at position '134': 0
+bitmap value at position '135': 0
+bitmap value at position '136': 0
+bitmap value at position '137': 0
+bitmap value at position '138': 0
+bitmap value at position '139': 0
+bitmap value at position '140': 0
+bitmap value at position '141': 0
+bitmap value at position '142': 0
+bitmap value at position '143': 0
+bitmap value at position '144': 0
+bitmap value at position '145': 0
+bitmap value at position '146': 0
+bitmap value at position '147': 0
+bitmap value at position '148': 0
+bitmap value at position '149': 0
+bitmap value at position '150': 0
+bitmap value at position '151': 0
+bitmap value at position '152': 0
+bitmap value at position '153': 0
+bitmap value at position '154': 0
+bitmap value at position '155': 0
+bitmap value at position '156': 0
+bitmap value at position '157': 0
+bitmap value at position '158': 0
+bitmap value at position '159': 0
+bitmap value at position '160': 0
+bitmap value at position '161': 0
+bitmap value at position '162': 0
+bitmap value at position '163': 0
+bitmap value at position '164': 0
+bitmap value at position '165': 0
+bitmap value at position '166': 0
+bitmap value at position '167': 0
+bitmap value at position '168': 0
+bitmap value at position '169': 0
+bitmap value at position '170': 0
+bitmap value at position '171': 0
+bitmap value at position '172': 0
+bitmap value at position '173': 0
+bitmap value at position '174': 0
+bitmap value at position '175': 0
+bitmap value at position '176': 0
+bitmap value at position '177': 0
+bitmap value at position '178': 0
+bitmap value at position '179': 0
+bitmap value at position '180': 0
+bitmap value at position '181': 0
+bitmap value at position '182': 0
+bitmap value at position '183': 0
+bitmap value at position '184': 1
+bitmap value at position '185': 0
+bitmap value at position '186': 0
+bitmap value at position '187': 0
+bitmap value at position '188': 0
+bitmap value at position '189': 0
+bitmap value at position '190': 0
+bitmap value at position '191': 0
+bitmap value at position '192': 0
+bitmap value at position '193': 0
+bitmap value at position '194': 0
+bitmap value at position '195': 0
+bitmap value at position '196': 0
+bitmap value at position '197': 0
+bitmap value at position '198': 0
+bitmap value at position '199': 0
+bitmap value at position '200': 0
+bitmap value at position '201': 0
+bitmap value at position '202': 0
+bitmap value at position '203': 0
+bitmap value at position '204': 0
+bitmap value at position '205': 0
+bitmap value at position '206': 0
+bitmap value at position '207': 0
+bitmap value at position '208': 0
+bitmap value at position '209': 0
+bitmap value at position '210': 0
+bitmap value at position '211': 0
+bitmap value at position '212': 0
+bitmap value at position '213': 0
+bitmap value at position '214': 0
+bitmap value at position '215': 0
+bitmap value at position '216': 0
+bitmap value at position '217': 0
+bitmap value at position '218': 0
+bitmap value at position '219': 0
+bitmap value at position '220': 0
+bitmap value at position '221': 0
+bitmap value at position '222': 0
+bitmap value at position '223': 0
+bitmap value at position '224': 0
+bitmap value at position '225': 0
+bitmap value at position '226': 0
+bitmap value at position '227': 0
+bitmap value at position '228': 0
+bitmap value at position '229': 0
+bitmap value at position '230': 0
+bitmap value at position '231': 0
+bitmap value at position '232': 0
+bitmap value at position '233': 0
+bitmap value at position '234': 0
+bitmap value at position '235': 0
+bitmap value at position '236': 0
+bitmap value at position '237': 0
+bitmap value at position '238': 0
+bitmap value at position '239': 0
+bitmap value at position '240': 0
+bitmap value at position '241': 0
+bitmap value at position '242': 0
+bitmap value at position '243': 0
+bitmap value at position '244': 0
+bitmap value at position '245': 0
+bitmap value at position '246': 0
+bitmap value at position '247': 0
+bitmap value at position '248': 0
+bitmap value at position '249': 0
+bitmap value at position '250': 0
+bitmap value at position '251': 0
+bitmap value at position '252': 0
+bitmap value at position '253': 0
+bitmap value at position '254': 0
+bitmap value at position '255': 0
+bitmap value at position '256': 0
+bitmap value at position '257': 0
+bitmap value at position '258': 0
+bitmap value at position '259': 0
+bitmap value at position '260': 0
+bitmap value at position '261': 0
+bitmap value at position '262': 0
+bitmap value at position '263': 0
+bitmap value at position '264': 0
+bitmap value at position '265': 0
+bitmap value at position '266': 0
+bitmap value at position '267': 0
+bitmap value at position '268': 0
+bitmap value at position '269': 0
+bitmap value at position '270': 0
+bitmap value at position '271': 0
+bitmap value at position '272': 0
+bitmap value at position '273': 0
+bitmap value at position '274': 0
+bitmap value at position '275': 0
+bitmap value at position '276': 0
+bitmap value at position '277': 0
+bitmap value at position '278': 0
+bitmap value at position '279': 0
+bitmap value at position '280': 0
+bitmap value at position '281': 0
+bitmap value at position '282': 0
+bitmap value at position '283': 0
+bitmap value at position '284': 0
+bitmap value at position '285': 0
+bitmap value at position '286': 0
+bitmap value at position '287': 0
+bitmap value at position '288': 0
+bitmap value at position '289': 0
+bitmap value at position '290': 0
+bitmap value at position '291': 0
+bitmap value at position '292': 0
+bitmap value at position '293': 0
+bitmap value at position '294': 0
+bitmap value at position '295': 0
+bitmap value at position '296': 0
+bitmap value at position '297': 0
+bitmap value at position '298': 0
+bitmap value at position '299': 0
+bitmap value at position '300': 0
+bitmap value at position '301': 0
+bitmap value at position '302': 0
+bitmap value at position '303': 0
+bitmap value at position '304': 0
+bitmap value at position '305': 0
+bitmap value at position '306': 0
+bitmap value at position '307': 0
+bitmap value at position '308': 0
+bitmap value at position '309': 0
+bitmap value at position '310': 0
+bitmap value at position '311': 0
+bitmap value at position '312': 0
+bitmap value at position '313': 0
+bitmap value at position '314': 0
+bitmap value at position '315': 0
+bitmap value at position '316': 0
+bitmap value at position '317': 0
+bitmap value at position '318': 0
+bitmap value at position '319': 0
+bitmap value at position '320': 0
+bitmap value at position '321': 0
+bitmap value at position '322': 0
+bitmap value at position '323': 0
+bitmap value at position '324': 0
+bitmap value at position '325': 0
+bitmap value at position '326': 0
+bitmap value at position '327': 0
+bitmap value at position '328': 0
+bitmap value at position '329': 0
+bitmap value at position '330': 0
+bitmap value at position '331': 0
+bitmap value at position '332': 0
+bitmap value at position '333': 0
+bitmap value at position '334': 0
+bitmap value at position '335': 0
+bitmap value at position '336': 0
+bitmap value at position '337': 0
+bitmap value at position '338': 0
+bitmap value at position '339': 0
+bitmap value at position '340': 0
+bitmap value at position '341': 0
+bitmap value at position '342': 0
+created Bitmap index...
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!4
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!9
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!8
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!7
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!8
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!9
+BM!cl!2!9
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!7
+BM!cl!2!9
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!8
+BM!cl!2!5
+BM!cl!2!9
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!8
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!9
+BM!cl!2!5
+BM!cl!2!6
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!5
+BM!cl!2!5
+BM!cl!2!5
+BM!cl!2!7
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!9
+BM!cl!2!4
+BM!cl!2!6
+BM!cl!2!4
+BM!cl!2!8
+BM!cl!2!4
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!7
+BM!cl!2!5
+BM!cl!2!9
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!7
+BM!cl!2!6
+BM!cl!2!5
+BM!cl!2!4
+BM!cl!2!0
+BM!cl!2!6
+BM!cl!2!8
+BM!cl!2!6
+BM!cl!2!0
+BM!cl!2!0
+BM!cl!2!4
+BM!cl!2!7
+BM!cl!2!5
+end of test....
+Disk reads: 1 Disk writes: 35
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between them
+db cl C A,C C=0 0 b 500 bitmap 1
+[Ljava.lang.String;@49993335
+[Puerto_Rico,0,]
+[Business,0,]
+[Nevada,0,]
+[Colorado,0,]
+[Arkansas,0,]
+[Connecticut,0,]
+[Idaho,0,]
+[Puerto_Rico,0,]
+[Connecticut,0,]
+[Oklahoma,0,]
+[Business,0,]
+[Indiana,0,]
+[Business,0,]
+[West_Virginia,0,]
+[West_Virginia,0,]
+[Kentucky,0,]
+[Singapore,0,]
+[Connecticut,0,]
+[Oklahoma,0,]
+[Connecticut,0,]
+[Business,0,]
+[Nevada,0,]
+[District_of_Columbia,0,]
+[Connecticut,0,]
+[Idaho,0,]
+[Kentucky,0,]
+[Montana,0,]
+[District_of_Columbia,0,]
+[Montana,0,]
+[Nevada,0,]
+[Kentucky,0,]
+[West_Virginia,0,]
+[Oklahoma,0,]
+[Colorado,0,]
+[Delaware,0,]
+[District_of_Columbia,0,]
+[District_of_Columbia,0,]
+[Business,0,]
+[Puerto_Rico,0,]
+[Vermont,0,]
+[Nevada,0,]
+[Arkansas,0,]
+[Business,0,]
+[District_of_Columbia,0,]
+[Oklahoma,0,]
+[Montana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[Indiana,0,]
+[North_Dakota,0,]
+[Arkansas,0,]
+[Montana,0,]
+[Idaho,0,]
+[Oklahoma,0,]
+[Montana,0,]
+[Connecticut,0,]
+[Kansas,0,]
+[West_Virginia,0,]
+Disk reads: 5 Disk writes: 0
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+3
+enter the inputs by giving space between them
+db cl C C=0 500 bitmap 1 1
+[Ljava.lang.String;@20322d26
+[]
+deleted records stored in markdeletefile
+records deleted from markdeletefile
+Disk reads: 34 Disk writes: 73
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between them
+db cl C C   A,C C<=4 500 bitmap 1
+[Ljava.lang.String;@67784306
+Disk reads: 0 Disk writes: 0
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between them
+bt  db cl A,  C C=4 500 btree 1
+[Ljava.lang.String;@335eadca
+headerpageid
+90
+pageno
+90
+[4,]
+[4,]
+[6,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[5,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[4,]
+[0,]
+AT THE END OF SCAN!
+Disk reads: 14 Disk writes: 9
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+2
+enter the inputs by giving space between themdb cl C C=4 500 bitmap 1
+[Ljava.lang.String;@210366b4
+[4,]
+[6,]
+[5,]
+[0,]
+[4,]
+[6,]
+[5,]
+[8,]
+[7,]
+[6,]
+[4,]
+[9,]
+[4,]
+[9,]
+[0,]
+[5,]
+[7,]
+[0,]
+[4,]
+[5,]
+[9,]
+[4,]
+[5,]
+[4,]
+[8,]
+[6,]
+[7,]
+[0,]
+[5,]
+[0,]
+[6,]
+[9,]
+[9,]
+[6,]
+[8,]
+[6,]
+[8,]
+[0,]
+[0,]
+Disk reads: 4 Disk writes: 0
+Enter
+[1] Index
+[2] query
+[3] delete
+[4] Quit
+^Z
+[1]+  Stopped                
+bash-3.2$ 

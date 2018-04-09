@@ -1,31 +1,15 @@
 package bitmap;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-import btree.NodeType;
-import btree.PinPageException;
-import btree.UnpinPageException;
-import bufmgr.HashEntryNotFoundException;
-import bufmgr.InvalidFrameNumberException;
-import bufmgr.PageUnpinnedException;
-import bufmgr.ReplacerException;
-import diskmgr.DiskMgrException;
-import diskmgr.FileEntryNotFoundException;
-import diskmgr.FileIOException;
-import diskmgr.InvalidPageNumberException;
-import global.Convert;
-import global.PageId;
-import global.RID;
-import global.SystemDefs;
-import heap.HFBufMgrException;
-import heap.HFDiskMgrException;
-import heap.HFException;
-import heap.Heapfile;
-import heap.InvalidSlotNumberException;
-import heap.InvalidTupleSizeException;
-import heap.InvalidUpdateException;
-import heap.Scan;
-import heap.Tuple;
+import btree.*;
+import bufmgr.*;
+import columnar.*;
+import diskmgr.*;
+import global.*;
+import heap.*;
 
 public class BitMapFile extends Heapfile {
 
@@ -39,24 +23,28 @@ public class BitMapFile extends Heapfile {
 	private String filename;
 	private Columnarfile cFile;
 	private int columnNo;
-	private KeyClass value;
+	public KeyClass value;
+
+
 
 	public BitMapHeaderPage getBitMapHeaderPage() {
 		return bitMapHeaderPage;
 	}
 
 	public BitMapFile(String filename) throws GetFileEntryException, PinPageException, ConstructPageException {
-		headerPageId = getFileEntry(filename);
-		bitMapHeaderPage = new BitMapHeaderPage(headerPageId);
+		//headerPageId = getFileEntry(filename);
+		//bitMapHeaderPage = new BitMapHeaderPage(headerPageId);
 		this.filename = new String(filename);
 	}
 
-	// TODO Column AR
-	public BitMapFile(String filename, Columnarfile cFile, int columnNo, KeyClass value)
+	public BitMapFile(String name, Heapfile heapFile, KeyClass value)
 			throws GetFileEntryException, ConstructPageException, IOException, AddFileEntryException, HFException,
-			HFBufMgrException, HFDiskMgrException {
-		super(filename);
-		headerPageId = getFileEntry(filename);
+			HFBufMgrException, HFDiskMgrException, InvalidTupleSizeException, KeyNotMatchException, InvalidSlotNumberException, SpaceNotAvailableException {
+		//super(filename);
+		headerPageId = getFileEntry(name);
+		 if( headerPageId==null) //file not exist
+		{
+			 
 		bitMapHeaderPage = new BitMapHeaderPage();
 		headerPageId = bitMapHeaderPage.getPageId();
 		bitMapHeaderPage.set_magic0(MAGIC0);
@@ -64,23 +52,23 @@ public class BitMapFile extends Heapfile {
 		bitMapHeaderPage.set_keyType(new Character('1'));
 		bitMapHeaderPage.set_maxKeySize(2);
 		bitMapHeaderPage.setType(NodeType.BTHEAD);
-		this.setcFile(cFile);
-		this.setColumnNo(columnNo);
-		this.setValue(value);
-		this.filename = new String(filename);
+		}
+		 else {
+			 bitMapHeaderPage = new BitMapHeaderPage ( headerPageId );  
+
+		 }
+		//this.setValue(value);
+		filename = new String(name);
+		createBitMap(heapFile,value);
 	}
 
-	public void setValue(KeyClass value) {
-		this.value = value;
-	}
-
-	public void setColumnNo(int columnNo) {
+	/*public void setColumnNo(int columnNo) {
 		this.columnNo = columnNo;
 	}
 
 	public void setcFile(Columnarfile cFile) {
 		this.cFile = cFile;
-	}
+	} */
 
 	private PageId getFileEntry(String filename) throws GetFileEntryException {
 		try {
@@ -99,14 +87,15 @@ public class BitMapFile extends Heapfile {
 		}
 	}
 
-	public void destroyBitMapFile() throws PageUnpinnedException, IOException, FreePageException,
+	public void destroyBitMapFile(String name) throws PageUnpinnedException, IOException, FreePageException,
 			DeleteFileEntryException, IteratorException, PinPageException, ConstructPageException, UnpinPageException,
 			FileEntryNotFoundException, FileIOException, InvalidPageNumberException, DiskMgrException {
-
-		SystemDefs.JavabaseDB.delete_file_entry(filename);
-		unpinPage(headerPageId);
-		freePage(headerPageId);
-		bitMapHeaderPage = null;
+	    System.out.println("name "+name);
+		SystemDefs.JavabaseDB.delete_file_entry(name);
+		
+	//	unpinPage(headerPageId);
+	//	freePage(headerPageId);
+	//	bitMapHeaderPage = null;
 	}
 
 	private void unpinPage(PageId pageno) throws UnpinPageException {
@@ -128,10 +117,11 @@ public class BitMapFile extends Heapfile {
 
 	}
 
-	boolean delete(int position) throws InvalidSlotNumberException, InvalidUpdateException, HFException,
+	boolean delete(String name,int position) throws InvalidSlotNumberException, InvalidUpdateException, HFException,
 			HFDiskMgrException, HFBufMgrException, Exception {
 		boolean status = true;
-		Scan scanHf = this.openScan();
+		Heapfile hf=new Heapfile(name);
+		Scan scanHf = hf.openScan();
 		RID rid = new RID();
 		Tuple tScan = new Tuple();
 		int count = 0;
@@ -170,5 +160,95 @@ public class BitMapFile extends Heapfile {
 		status = this.updateRecord(rid, tScan);
 		return status;
 	}
+	
+	 public void createBitMap(Heapfile hf,KeyClass value)
+	  {
+		  try
+		  {
+			  Scan scanHf = hf.openScan();
+			 Heapfile hff =new Heapfile(filename);
+			  RID rid = new RID();
+			  Tuple tScan = null;
+			  int cnt=0;
+			  byte[] Y = new byte[4] ; byte[] N = new byte[4] ;
+			Convert.setIntValue(1,0,Y);
+			Convert.setIntValue(0,0,N);
+			int i=0;
+			  while((tScan=scanHf.getNext(rid))!=null)
+			  {
+				//  System.out.println(new String(tScan.getTupleByteArray()));
+				  KeyClass key;
+				  byte[] temp = tScan.returnTupleByteArray();
+				  if (value instanceof IntegerKey) {
+				//	  System.out.println(i);
+					 int key1 = Convert.getIntValue(0, temp);
+					 key =new IntegerKey(key1);
+					 i++;
+					 }
+				  else {
+				//	  System.out.println("str");
+					  String key1= Convert.getStrValue(0, temp, globalVar.sizeOfStr).trim();
+					  key= new StringKey(key1);
+				  }
+				  if((BT.keyCompare(value,key))==0){
+					  hff.insertRecord(Y);
+				  }
+				  else{
+					  hff.insertRecord(N);
+				  }
+			  }
+			  scanHf.closescan();
+           
+		  }
+		  catch(Exception e)
+		  {
+			 
+		  }
+	  }
+	 
+	public void printBitMapFile(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
+		Heapfile hf=new Heapfile(name);
+		Scan scanHf = hf.openScan();
+		RID rid = new RID();
+		Tuple tScan = null;
+		 byte[] Y = new byte[4] ; byte[] N = new byte[4] ;
+			Convert.setIntValue(1,0,Y);
+			Convert.setIntValue(0,0,N);
+		System.out.println("Printing Bitmap contents: ");
+		int cnt = 1;
+		while((tScan = scanHf.getNext(rid))!=null) {
+			byte[] temp = tScan.returnTupleByteArray();
+			if(Arrays.equals(temp,Y)) {
+				System.out.println("bitmap value at position '"+cnt+"': 1");
+			} else if(Arrays.equals(temp,N)) {
+				System.out.println("bitmap value at position '"+cnt+"': 0");
+			} 
+			cnt++;
+		}
+	}
+		public int[] getPositions(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
 
+            Heapfile hf=new Heapfile(name);
+			Scan scanHf = hf.openScan();
+			RID rid = new RID();
+			int[] positions= new int[hf.MAX_SPACE];
+			
+			Tuple tScan = null;
+			 byte[] Y = new byte[4] ; 
+				Convert.setIntValue(1,0,Y);
+			int cnt = 1;int k=0;
+			while((tScan = scanHf.getNext(rid))!=null) {
+			//	System.out.println("bitmap "+new String( tScan.returnTupleByteArray()));
+				byte[] temp = tScan.returnTupleByteArray();
+				if(Arrays.equals(temp,Y)) {
+						positions[k]=cnt;
+            //        System.out.println("positions "+ positions[k]);k++;
+
+					
+				} 
+				cnt++;
+				
+			}
+			return positions;
+		}
 }

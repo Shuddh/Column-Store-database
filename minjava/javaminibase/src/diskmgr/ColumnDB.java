@@ -1,5 +1,5 @@
 package diskmgr;
 
-public class ColumnDB extends DB{
-	
+public class ColumnDB extends DB {
+
 }

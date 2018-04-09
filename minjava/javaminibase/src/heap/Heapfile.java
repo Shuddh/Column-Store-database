@@ -41,7 +41,7 @@ interface  Filetype {
 } // end of Filetype
 
 public class Heapfile implements Filetype,  GlobalConst {
-  
+	public Heapfile() {}
   
   PageId      _firstDirPageId;   // page number of header page
   int         _ftype;
@@ -281,6 +281,7 @@ public class Heapfile implements Filetype,  GlobalConst {
 	  
 	  
 	}
+     
       _file_deleted = false;
       // ASSERTIONS:
       // - ALL private data members of class Heapfile are valid:
@@ -786,7 +787,7 @@ public class Heapfile implements Filetype,  GlobalConst {
       
       // Assume update a record with a record whose length is equal to
       // the original record
-      
+
       if(newtuple.getLength() != atuple.getLength())
 	{
 	  unpinPage(currentDataPageId, false /*undirty*/);
@@ -1043,6 +1044,131 @@ public class Heapfile implements Filetype,  GlobalConst {
 
   } // end of delete_file_entry
 
+  public int getposition(RID query_rid)
+			throws InvalidSlotNumberException,
+			InvalidTupleSizeException,
+			HFDiskMgrException,
+			HFBufMgrException,
+			IOException
 
+	{
+		int answer = 0;
+		PageId currentDirPageId = new PageId(_firstDirPageId.pid);
+
+		PageId nextDirPageId = new PageId(0);
+
+		HFPage currentDirPage = new HFPage();
+		Page pageinbuffer = new Page();
+
+		while(currentDirPageId.pid != INVALID_PAGE)
+		{
+			pinPage(currentDirPageId, currentDirPage, false);
+
+			RID rid = new RID();
+			Tuple atuple;
+			for (rid = currentDirPage.firstRecord();
+				 rid != null;	// rid==NULL means no more record
+				 rid = currentDirPage.nextRecord(rid))
+			{
+				atuple = currentDirPage.getRecord(rid);
+				DataPageInfo dpinfo = new DataPageInfo(atuple);
+				if(dpinfo.pageId.pid == query_rid.pageNo.pid){
+					HFPage datapg=new HFPage();
+					pinPage(dpinfo.pageId, datapg, false/*Rddisk*/);
+					answer=answer+datapg.returnposition(query_rid.slotNo);
+					unpinPage(dpinfo.pageId, false );
+					break;}
+				
+				answer += dpinfo.recct;
+			}
+			// ASSERTIONS: no more record
+			// - we have read all datapage records on
+			//   the current directory page.
+
+			nextDirPageId = currentDirPage.getNextPage();
+			unpinPage(currentDirPageId, false );
+			currentDirPageId.pid = nextDirPageId.pid;
+		}
+
+		// ASSERTIONS:
+		// - if error, exceptions
+		// - if end of heapfile reached: currentDirPageId == INVALID_PAGE
+		// - if not yet end of heapfile: currentDirPageId valid
+
+
+		return answer;
+	} // end of getRecCnt
+
+	public RID getrid(int position)
+			throws InvalidSlotNumberException,
+			InvalidTupleSizeException,
+			HFDiskMgrException,
+			HFBufMgrException,
+			IOException
+
+	{
+		int answer = 0;
+		PageId currentDirPageId = new PageId(_firstDirPageId.pid);
+
+		PageId nextDirPageId = new PageId(0);
+
+		HFPage currentDirPage = new HFPage();
+		Page pageinbuffer = new Page();
+		RID rid1 = new RID();
+		while(currentDirPageId.pid != INVALID_PAGE)
+		{
+			pinPage(currentDirPageId, currentDirPage, false);
+			RID rid = new RID();
+
+			Tuple atuple;
+			for (rid = currentDirPage.firstRecord();
+				 rid != null;	// rid==NULL means no more record
+				 rid = currentDirPage.nextRecord(rid))
+			{
+				atuple = currentDirPage.getRecord(rid);
+				DataPageInfo dpinfo = new DataPageInfo(atuple);
+			//	System.out.println("ans"+answer);
+				answer += dpinfo.recct;
+		/*		if(answer>=position){
+					answer = answer - dpinfo.recct;
+					rid.pageNo.pid =dpinfo.pageId.pid;
+				//	System.out.println(position-answer);
+					rid.slotNo = position-answer-1;
+
+					return rid;
+				} */
+				if(answer>=position){
+					answer = answer - dpinfo.recct;
+					rid.pageNo.pid =dpinfo.pageId.pid;
+				//	System.out.println("posans"+ (position-answer));
+
+					HFPage datapg=new HFPage();
+
+					pinPage(dpinfo.pageId, datapg, false/*Rddisk*/);
+
+					//datapg.setCurPage(rid.pageNo);
+					rid.slotNo=(datapg.returnslot((position-answer)))-1;
+				//	System.out.println("rid.slotNo  "+rid.slotNo);
+					unpinPage(dpinfo.pageId, false );
+					rid1.copyRid(rid);
+					break;
+
+				}
+			}
+			// ASSERTIONS: no more record
+			// - we have read all datapage records on
+			//   the current directory page.
+
+			nextDirPageId = currentDirPage.getNextPage();
+			unpinPage(currentDirPageId, false );
+			currentDirPageId.pid = nextDirPageId.pid;
+		}
+		// ASSERTIONS:
+		// - if error, exceptions
+		// - if end of heapfile reached: currentDirPageId == INVALID_PAGE
+		// - if not yet end of heapfile: currentDirPageId valid
+		return rid1;
+		
+	}
   
 }// End of HeapFile 

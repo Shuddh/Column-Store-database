@@ -709,5 +709,48 @@ public class HFPage extends Page
 	  Convert.setShortValue (slotCnt, SLOT_CNT, data);
 	}
     }
-  
+    public int returnslot(int position)
+            throws IOException {
+        int empcnt = 0;
+        int itera = position;
+        int i;
+        short length;
+        // look for an empty slot
+        slotCnt = Convert.getShortValue(SLOT_CNT, data);
+    //    System.out.println( "slotCnt");
+     //   System.out.println( slotCnt);
+        for (i = 0; i < slotCnt; i++) {
+            length = getSlotLength(i);
+            if (length == EMPTY_SLOT)
+                empcnt++;
+            else {
+                itera--;
+                if (itera == 0)
+                    return position + empcnt;
+            }
+
+        }                                                         
+    return 0;
+    }
+
+    public int returnposition(int slotnum)
+            throws IOException {
+        int itera = 0;
+        int i;
+          short length;
+          // look for an empty slot
+          slotCnt = Convert.getShortValue(SLOT_CNT, data);
+          //  System.out.println( "slotCnt");
+         //   System.out.println( slotCnt);
+        for (i = 0; i <=slotnum; i++) {
+              length = getSlotLength(i);
+              if (length != EMPTY_SLOT) {
+                  itera++;
+                  
+              }
+
+
+ }
+   return itera;
+   }
 }

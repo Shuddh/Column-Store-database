@@ -2,23 +2,11 @@ package bitmap;
 
 import java.io.IOException;
 
-import btree.BTIndexPage;
-import btree.BTSortedPage;
-import btree.ConstructPageException;
-import btree.IndexData;
-import btree.IteratorException;
-import btree.KeyDataEntry;
-import btree.NodeType;
-import bufmgr.HashEntryNotFoundException;
-import bufmgr.InvalidFrameNumberException;
-import bufmgr.PageUnpinnedException;
-import bufmgr.ReplacerException;
-import diskmgr.Page;
-import global.GlobalConst;
-import global.PageId;
-import global.RID;
-import global.SystemDefs;
-import heap.Scan;
+import btree.*;
+import bufmgr.*;
+import diskmgr.*;
+import global.*;
+import heap.*;
 
 public class BM implements GlobalConst {
 

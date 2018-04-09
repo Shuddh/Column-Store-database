@@ -174,10 +174,11 @@ public class BTreeFile extends IndexFile
 	   ConstructPageException        
     {      
       
-      
-      headerPageId=get_file_entry(filename);   
-      
-      headerPage= new  BTreeHeaderPage( headerPageId);       
+
+      headerPageId=get_file_entry(filename);
+      System.out.println("headerpageid");
+		System.out.println(headerPageId);
+		headerPage= new  BTreeHeaderPage( headerPageId);
       dbname = new String(filename);
       /*
        *
@@ -215,6 +216,7 @@ public class BTreeFile extends IndexFile
 	{
 	  headerPage= new  BTreeHeaderPage(); 
 	  headerPageId= headerPage.getPageId();
+	  System.out.println("headerPageId          " + headerPageId);
 	  add_file_entry(filename, headerPageId);
 	  headerPage.set_magic0(MAGIC0);
 	  headerPage.set_rootId(new PageId(INVALID_PAGE));
