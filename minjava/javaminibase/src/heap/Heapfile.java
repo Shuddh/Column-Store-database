@@ -1060,6 +1060,7 @@ public class Heapfile implements Filetype,  GlobalConst {
 		HFPage currentDirPage = new HFPage();
 		Page pageinbuffer = new Page();
 
+
 		while(currentDirPageId.pid != INVALID_PAGE)
 		{
 			pinPage(currentDirPageId, currentDirPage, false);
@@ -1072,14 +1073,22 @@ public class Heapfile implements Filetype,  GlobalConst {
 			{
 				atuple = currentDirPage.getRecord(rid);
 				DataPageInfo dpinfo = new DataPageInfo(atuple);
+			//	System.out.println(dpinfo.pageId.pid);
 				if(dpinfo.pageId.pid == query_rid.pageNo.pid){
-					HFPage datapg=new HFPage();
-					pinPage(dpinfo.pageId, datapg, false/*Rddisk*/);
-					answer=answer+datapg.returnposition(query_rid.slotNo);
-					unpinPage(dpinfo.pageId, false );
-					break;}
-				
+					//HFPage datapg=new HFPage();
+			//		pinPage(dpinfo.pageId, datapg, false/*Rddisk*/);
+			//		System.out.println("in");
+			//		System.out.println(answer);
+					answer=answer+query_rid.slotNo+1;
+				//	answer=answer+datapg.returnposition(query_rid.slotNo);
+			//		System.out.println(answer);
+				//	unpinPage(dpinfo.pageId, false );
+					return answer;}
+				//System.out.println("out");
+			//	System.out.println(answer);
 				answer += dpinfo.recct;
+		//		System.out.println("out");
+		//		System.out.println(answer);
 			}
 			// ASSERTIONS: no more record
 			// - we have read all datapage records on
@@ -1096,7 +1105,7 @@ public class Heapfile implements Filetype,  GlobalConst {
 		// - if not yet end of heapfile: currentDirPageId valid
 
 
-		return answer;
+		return 0;
 	} // end of getRecCnt
 
 	public RID getrid(int position)
@@ -1129,31 +1138,31 @@ public class Heapfile implements Filetype,  GlobalConst {
 				DataPageInfo dpinfo = new DataPageInfo(atuple);
 			//	System.out.println("ans"+answer);
 				answer += dpinfo.recct;
-		/*		if(answer>=position){
+				if(answer>=position){
 					answer = answer - dpinfo.recct;
 					rid.pageNo.pid =dpinfo.pageId.pid;
 				//	System.out.println(position-answer);
 					rid.slotNo = position-answer-1;
 
 					return rid;
-				} */
-				if(answer>=position){
-					answer = answer - dpinfo.recct;
+				}
+		/*		if(answer>=position){
+				answer = answer - dpinfo.recct;
 					rid.pageNo.pid =dpinfo.pageId.pid;
 				//	System.out.println("posans"+ (position-answer));
 
 					HFPage datapg=new HFPage();
 
-					pinPage(dpinfo.pageId, datapg, false/*Rddisk*/);
+			/*		pinPage(dpinfo.pageId, datapg, false/*Rddisk*/ //);
 
 					//datapg.setCurPage(rid.pageNo);
-					rid.slotNo=(datapg.returnslot((position-answer)))-1;
+			//		rid.slotNo=(datapg.returnslot((position-answer)))-1;
+				//	rid.slotNo=(position-answer)-1;
 				//	System.out.println("rid.slotNo  "+rid.slotNo);
-					unpinPage(dpinfo.pageId, false );
-					rid1.copyRid(rid);
-					break;
-
-				}
+			//		unpinPage(dpinfo.pageId, false );
+			//		rid1.copyRid(rid);
+		//			break;
+		//		}
 			}
 			// ASSERTIONS: no more record
 			// - we have read all datapage records on
@@ -1167,7 +1176,7 @@ public class Heapfile implements Filetype,  GlobalConst {
 		// - if error, exceptions
 		// - if end of heapfile reached: currentDirPageId == INVALID_PAGE
 		// - if not yet end of heapfile: currentDirPageId valid
-		return rid1;
+		return null;
 		
 	}
   

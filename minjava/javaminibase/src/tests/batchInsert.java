@@ -46,7 +46,7 @@ public class batchinsert {
 
         AttrType[] attr_types = new AttrType[Integer.parseInt(argv[3])];
 
-        String filepath = "/Users/sravya/Desktop/task/minjava/javaminibase/src/tests/";
+        String filepath = "/Users/sravya/Desktop/";
 
         SystemDefs sysdef = new SystemDefs(argv[1], 10000, 500, "Clock");
 
@@ -71,7 +71,7 @@ public class batchinsert {
                 String[] temp1 = temp[1].split("\\(|\\)");
                 column_names[i] = temp[0];
                 if (temp1[0].equals("int")) {
-                    attr_types[i] = new AttrType(AttrType.attrInteger);
+                   attr_types[i] = new AttrType(AttrType.attrInteger);
                     tuple_length = tuple_length + globalVar.sizeOfInt;
                     string_size[i] = 4;
                 } else {
@@ -93,7 +93,7 @@ public class batchinsert {
             byte[] Tuple_Data = new byte[tuple_length];
             int offset = 0;
             while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
+              //  System.out.println(line);
 
                 String[] temp = line.split("\\s+");
                 //      System.out.println(temp[0]);

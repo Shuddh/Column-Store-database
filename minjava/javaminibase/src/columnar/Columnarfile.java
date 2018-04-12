@@ -161,7 +161,8 @@ public class Columnarfile implements GlobalConst {
                 offset+=globalVar.sizeOfStr;
             }
         }
-        tid.position=hfColumns[0].getposition(tid.recordIDs[0]);
+      //  tid.position=hfColumns[0].getposition(tid.recordIDs[0]);
+        tid.position =0;
         return tid;
     }
 

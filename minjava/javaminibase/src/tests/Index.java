@@ -89,14 +89,25 @@ public class index implements GlobalConst{
                 }catch(Exception e)
                 {
                 }
+                AttrType attr;
 
-                btf = new BTreeFile("BT!"+columnarFileName+'!'+ColumnIndex, AttrType.attrInteger, globalVar.sizeOfInt, 0/*delete*/);
+                attr= (cfmeta.getAttrTypes())[ColumnIndex];
+                if(attr.attrType == AttrType.attrInteger) {
+                    btf = new BTreeFile("BT!" + columnarFileName + '!' + ColumnIndex, AttrType.attrInteger, globalVar.sizeOfInt, 0/*delete*/);
+                    while ((hTuple = hScan.getNext(rid)) != null) {
+                        int temp = Convert.getIntValue(0, hTuple.getTupleByteArray());
 
-                while((hTuple=hScan.getNext(rid))!=null)
-                {
-                    int temp=Convert.getIntValue(0, hTuple.getTupleByteArray());
-                   
-                    btf.insert(new btree.IntegerKey(temp), rid);
+                        btf.insert(new btree.IntegerKey(temp), rid);
+                    }
+                }
+
+                else if(attr.attrType == AttrType.attrString){
+                    btf = new BTreeFile("BT!"+columnarFileName+'!'+ColumnIndex, AttrType.attrString, globalVar.sizeOfStr, 0);
+                    while ((hTuple = hScan.getNext(rid)) != null) {
+                        String temp = Convert.getStrValue(0, hTuple.getTupleByteArray(),globalVar.sizeOfStr);
+
+                        btf.insert(new btree.StringKey(temp), rid);
+                    }
                 }
                 BT.printBTree(btf.getHeaderPage());
                 System.out.println("printing leaf pages...");
@@ -117,7 +128,6 @@ public class index implements GlobalConst{
                 RID rid=new RID();
                 Scan hScan=reqHFile.openScan();
                 Tuple hTuple=null;
-                Heapfile UNIQUeValhf =
                while((hTuple=hScan.getNext(rid))!=null) {
                     AttrType attr;
          

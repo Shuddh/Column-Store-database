@@ -345,17 +345,21 @@ catch (Exception e)
     {
     	
         KeyDataEntry entry;
+        int count=0;
+
         if(targetattr.attrType == AttrType.attrInteger) { //Assuming value is an Integer type
         	keyType=AttrType.attrInteger;
           btf = new BTreeFile("BT!"+COLUMNARFILENAME+'!'+condcolumnindex);}
         else if(targetattr.attrType == AttrType.attrString) { //Assuming value is a String type
         	keyType=AttrType.attrString;
-        	btf = new BTreeFile("BT!"+COLUMNARFILENAME+'!'+condcolumnindex);}
+        	btf = new BTreeFile("BT!"+COLUMNARFILENAME+'!'+condcolumnindex);
+            }
+        BTFileScan scan = btf.new_scan(null,null);
      //   BT.printBTree(btf.getHeaderPage());
        // BT.printBTree(btf.getHeaderPage());
      //   System.out.println("printing leaf pages...");
      //   BT.printAllLeafPages(btf.getHeaderPage());
-        BTFileScan scan = btf.new_scan(new IntegerKey(0),new IntegerKey(btf.MAX_SPACE));
+
         while((entry=scan.get_next())!=null)
         {
      //       System.out.println(entry.data.toString());
@@ -411,6 +415,7 @@ catch (Exception e)
                          {
                              Heapfile hf = new Heapfile(COLUMNARFILENAME+"."+condcolumnindex);
                              int position=hf.getposition(tempRid);
+                             count++;
                              printCorrespondTuples(columnindexes,attrTarget,AllColAttr,cfmeta,position);
                          }
 
@@ -460,10 +465,13 @@ catch (Exception e)
                      {
                          RID tempRid=new RID();
                          tempRid=((btree.LeafData)entry.data).getData();
-                         if(targetattr.attrType == AttrType.attrInteger)
+                         if(targetattr.attrType == AttrType.attrString)
                          {
                              Heapfile hf = new Heapfile(COLUMNARFILENAME+"."+condcolumnindex);
                              int position=hf.getposition(tempRid);
+                          //   System.out.println("position");
+                          //   System.out.println(position);
+                             count++;
                              printCorrespondTuples(columnindexes,attrTarget,AllColAttr,cfmeta,position);
                          }
 
@@ -475,7 +483,8 @@ catch (Exception e)
         
 
 
-        } 
+        }
+        System.out.println(count);
         System.out.println("AT THE END OF SCAN!");
     //    System.out.println("Disk Reads"+ (pcounter.rcounter - startread));
     //    System.out.println("Disk Writes"+ (pcounter.wcounter - startwrite));
