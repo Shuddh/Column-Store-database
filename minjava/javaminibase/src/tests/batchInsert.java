@@ -38,11 +38,14 @@ import diskmgr.pcounter;
 
 
 public class batchinsert {
+    public void batchinsert() throws Exception{
+
+    }
 
     public static void main (String argv[]) throws Exception {
-        int flush=0;
-        int diskreads = pcounter.rcounter;
-        int diskwrites = pcounter.wcounter;
+      //  int flush=0;
+     //   int diskreads = pcounter.rcounter;
+    //    int diskwrites = pcounter.wcounter;
 
         AttrType[] attr_types = new AttrType[Integer.parseInt(argv[3])];
 
@@ -60,7 +63,7 @@ public class batchinsert {
 
             String[] column_names = new String[Integer.parseInt(argv[3])];
             int string_size[] = new int[Integer.parseInt(argv[3])];
-            flush=Integer.parseInt(argv[4]);
+          //  flush=Integer.parseInt(argv[4]);
             int tuple_length = 0;
 
             String[] stringArray = line.split("\\s+");
@@ -130,11 +133,11 @@ public class batchinsert {
         }
         System.out.println("records successfully inserted");
         SystemDefs.JavabaseBM.unpinbuffpages();
-        if (flush==1) {
+      /*  if (flush==1) {
         SystemDefs.JavabaseBM.flushAllPages(); }
-        System.out.println("Disk reads: " + (pcounter.rcounter - diskreads) + " Disk writes: " + (pcounter.wcounter - diskwrites));
+        System.out.println("Disk reads: " + (pcounter.rcounter - diskreads) + " Disk writes: " + (pcounter.wcounter - diskwrites)); */
       //  SystemDefs.JavabaseDB.closeDB();
-        run cho = new run();
+     /*   run cho = new run();
         while (true) {
             String[] CHOICE = cho.main();
 
@@ -186,7 +189,7 @@ public class batchinsert {
                 e.printStackTrace();
             }
       //      System.out.println("unpined");
-        }
+        } */
     }
     
 }

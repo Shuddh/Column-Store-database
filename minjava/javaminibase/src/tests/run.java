@@ -7,10 +7,11 @@ public class run {
     public static String[] runTests(){
         int choice=0;
         String inp="";
-            System.out.println("[1] Index");
-            System.out.println("[2] query");
-            System.out.println("[3] delete");
-            System.out.println("[4] Quit");
+            System.out.println("[1] Batch Insert");
+            System.out.println("[2] Index");
+            System.out.println("[3] Query");
+            System.out.println("[4] Delete");
+
             try{
                 choice=getChoice();
                 switch (choice){
@@ -25,6 +26,11 @@ public class run {
                      
                     case 3:
                     	System.out.println("enter the inputs by giving space between them");
+                        inp=getInput();
+                        break;
+
+                    case 4:
+                        System.out.println("enter the inputs by giving space between them");
                         inp=getInput();
                         break;
                 }
