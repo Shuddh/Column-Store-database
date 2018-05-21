@@ -51,7 +51,7 @@ public class batchinsert {
 
         String filepath = "/Users/sravya/Desktop/";
 
-        SystemDefs sysdef = new SystemDefs(argv[1], 10000, 500, "Clock");
+       // SystemDefs sysdef = new SystemDefs(argv[1], 10000, 500, "Clock");
 
         try {
             FileInputStream fileInputStream = new FileInputStream(filepath + argv[0]);

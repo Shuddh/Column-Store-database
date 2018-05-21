@@ -3,6 +3,10 @@ package bitmap;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.BitSet;
+
+
 
 import btree.*;
 import bufmgr.*;
@@ -10,6 +14,8 @@ import columnar.*;
 import diskmgr.*;
 import global.*;
 import heap.*;
+import tests.Positions;
+
 
 public class BitMapFile extends Heapfile {
 
@@ -171,6 +177,7 @@ public class BitMapFile extends Heapfile {
 			  Tuple tScan = null;
 			  int cnt=0;
 			  byte[] Y = new byte[4] ; byte[] N = new byte[4] ;
+
 			Convert.setIntValue(1,0,Y);
 			Convert.setIntValue(0,0,N);
 			int i=0;
@@ -214,34 +221,39 @@ public class BitMapFile extends Heapfile {
 		 byte[] Y = new byte[4] ; byte[] N = new byte[4] ;
 			Convert.setIntValue(1,0,Y);
 			Convert.setIntValue(0,0,N);
-		System.out.println("Printing Bitmap contents: ");
+	//	System.out.println("Printing Bitmap contents: ");
 		int cnt = 1;
 		while((tScan = scanHf.getNext(rid))!=null) {
 			byte[] temp = tScan.returnTupleByteArray();
 			if(Arrays.equals(temp,Y)) {
-				System.out.println("bitmap value at position '"+cnt+"': 1");
+		//		System.out.println("bitmap value at position '"+cnt+"': 1");
 			} else if(Arrays.equals(temp,N)) {
-				System.out.println("bitmap value at position '"+cnt+"': 0");
+		//		System.out.println("bitmap value at position '"+cnt+"': 0");
 			} 
 			cnt++;
 		}
 	}
-		public int[] getPositions(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
+		public HashMap<Integer, ArrayList<RID>> getHashPositions(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
 
             Heapfile hf=new Heapfile(name);
 			Scan scanHf = hf.openScan();
 			RID rid = new RID();
-			int[] positions= new int[hf.MAX_SPACE];
-			
+			//ArrayList<Positions>positions=new ArrayList<Positions>();
+			HashMap<Integer, ArrayList<RID>> positions = new HashMap<>();
+
+
 			Tuple tScan = null;
 			 byte[] Y = new byte[4] ; 
 				Convert.setIntValue(1,0,Y);
-			int cnt = 1;int k=0;
+			int cnt = 1;
 			while((tScan = scanHf.getNext(rid))!=null) {
 			//	System.out.println("bitmap "+new String( tScan.returnTupleByteArray()));
 				byte[] temp = tScan.returnTupleByteArray();
 				if(Arrays.equals(temp,Y)) {
-						positions[k]=cnt;
+					ArrayList<RID> rids=null;
+					positions.put(cnt,rids);
+				//	Positions position=new Positions(cnt);
+				//	positions.add(position);
             //        System.out.println("positions "+ positions[k]);k++;
 
 					
@@ -251,4 +263,54 @@ public class BitMapFile extends Heapfile {
 			}
 			return positions;
 		}
+	public ArrayList<Integer> getPos(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
+
+		Heapfile hf=new Heapfile(name);
+		Scan scanHf = hf.openScan();
+		RID rid = new RID();
+		ArrayList<Integer> positions= new ArrayList<Integer>();
+
+		Tuple tScan = null;
+		byte[] Y = new byte[4] ;
+		Convert.setIntValue(1,0,Y);
+		int cnt = 1;int k=0;
+		while((tScan = scanHf.getNext(rid))!=null) {
+			//	System.out.println("bitmap "+new String( tScan.returnTupleByteArray()));
+			byte[] temp = tScan.returnTupleByteArray();
+			if(Arrays.equals(temp,Y)) {
+				positions.add(cnt);
+				//        System.out.println("positions "+ positions[k]);k++;
+
+
+			}
+			cnt++;
+
+		}
+		return positions;
+	}
+	public int[] getPositions(String name) throws InvalidTupleSizeException, IOException, HFException, HFBufMgrException, HFDiskMgrException {
+
+		Heapfile hf=new Heapfile(name);
+		Scan scanHf = hf.openScan();
+		RID rid = new RID();
+		int[] positions= new int[hf.MAX_SPACE];
+
+		Tuple tScan = null;
+		byte[] Y = new byte[4] ;
+		Convert.setIntValue(1,0,Y);
+		int cnt = 1;int k=0;
+		while((tScan = scanHf.getNext(rid))!=null) {
+			//	System.out.println("bitmap "+new String( tScan.returnTupleByteArray()));
+			byte[] temp = tScan.returnTupleByteArray();
+			if(Arrays.equals(temp,Y)) {
+				positions[k]=cnt;
+				//        System.out.println("positions "+ positions[k]);k++;
+
+
+			}
+			cnt++;
+
+		}
+		return positions;
+	}
 }

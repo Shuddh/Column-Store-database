@@ -74,14 +74,31 @@ public class Tuple implements GlobalConst{
     * @param fromTuple   a byte array which contains the tuple
     * 
     */
-   public Tuple(Tuple fromTuple)
+   public Tuple(Tuple fromTuple) throws Exception
    {
+
        data = fromTuple.getTupleByteArray();
        tuple_length = fromTuple.getLength();
        tuple_offset = 0;
-       fldCnt = fromTuple.noOfFlds(); 
-       fldOffset = fromTuple.copyFldOffset(); 
+       fldCnt = fromTuple.noOfFlds();
+       fldOffset = fromTuple.copyFldOffset();
    }
+
+    public Tuple(int flag,Tuple fromTuple) throws Exception
+    {
+      //  System.out.println(Convert.getStrValue(0, fromTuple.getTupleByteArray(), globalVar.sizeOfStr));
+
+        data = fromTuple.getTupleByteArray();
+        tuple_length = fromTuple.getLength();
+        tuple_offset = 0;
+        fldCnt=2;
+        fldOffset = fromTuple.cp_FldOffset();
+      //  System.out.println(fldOffset[0]);
+     //   System.out.println(fldOffset[1]);
+
+
+        //  fldOffset=0;
+    }
 
    /**  
     * Class constructor
@@ -245,9 +262,22 @@ public class Tuple implements GlobalConst{
          
     if ( (fldNo > 0) && (fldNo <= fldCnt))      
      {
+    //     System.out.println("fll");
+     //    System.out.println(Convert.getStrValue(0, data,
+     //            50));
+    //     System.out.println(fldNo);
+    //     if(fldOffset[fldNo -1]==6)
+    //         fldOffset[fldNo -1]=0;
+    //     if(fldOffset[fldNo] ==58 )
+   //          fldOffset[fldNo]=50;
+    //     System.out.println(fldOffset[fldNo -1]);
+    //     System.out.println(fldOffset[fldNo] - fldOffset[fldNo -1]);
+
         val = Convert.getStrValue(fldOffset[fldNo -1], data, 
 		fldOffset[fldNo] - fldOffset[fldNo -1]); //strlen+2
-        return val;
+      //   System.out.println(val);
+
+         return val;
      }
     else 
      throw new FieldNumberOutOfBoundException (null, "TUPLE:TUPLE_FLDNO_OUT_OF_BOUND");
@@ -288,11 +318,11 @@ public class Tuple implements GlobalConst{
 
   public Tuple setIntFld(int fldNo, int val) 
   	throws IOException, FieldNumberOutOfBoundException
-  { 
-	  
+  {
     if ( (fldNo > 0) && (fldNo <= fldCnt))
      {
 	Convert.setIntValue (val, fldOffset[fldNo -1], data);
+
 	return this;
      }
     else 
@@ -360,6 +390,7 @@ public class Tuple implements GlobalConst{
 public void setHdr (short numFlds,  AttrType types[], short strSizes[])
  throws IOException, InvalidTypeException, InvalidTupleSizeException		
 {
+
   if((numFlds +2)*2 > max_size)
     throw new InvalidTupleSizeException (null, "TUPLE: TUPLE_TOOBIG_ERROR");
   
@@ -429,9 +460,51 @@ public void setHdr (short numFlds,  AttrType types[], short strSizes[])
   if(tuple_length > max_size)
    throw new InvalidTupleSizeException (null, "TUPLE: TUPLE_TOOBIG_ERROR");
 }
-     
-  
-  /**
+
+    public void new_setHdr (short numFlds,  AttrType type[])
+            throws IOException, InvalidTypeException, InvalidTupleSizeException
+    {
+
+        fldCnt = numFlds;
+        fldOffset = new short[numFlds+1];
+       // int pos = tuple_offset+2;  // start position for fldOffset[]
+
+        //sizeof short =2  +2: array siaze = numFlds +1 (0 - numFilds) and
+        //another 1 for fldCnt
+        fldOffset[0] = 0;
+        for(int i=1;i<numFlds+1;i++) {
+            if (type[i - 1].attrType == AttrType.attrString) {
+                tuple_length = 50;
+                fldOffset[0] = 0;
+
+                fldOffset[i] = (short) (fldOffset[i - 1] + 50);
+
+            }
+            if (type[i - 1].attrType == AttrType.attrInteger) {
+                tuple_length = 4;
+                fldOffset[i] = (short) (fldOffset[i - 1] + 4);
+
+            }
+        }
+    /*    if(type[0].attrType ==AttrType.attrString ){
+        tuple_length = 50;
+            fldOffset[0] = 0;
+            for(int i=1;i<numFlds+1;i++)
+                fldOffset[i] = (short) (fldOffset[i-1]+50);
+
+        }
+        if(type[0].attrType ==AttrType.attrInteger){
+            tuple_length = 4;
+            fldOffset[0] = 0;
+            for(int i=1;i<numFlds+1;i++)
+                fldOffset[i] = (short) (fldOffset[i-1]+4);
+
+        }*/
+    }
+
+
+
+    /**
    * Returns number of fields in this tuple
    *
    * @return the number of fields in this tuple
@@ -449,6 +522,24 @@ public void setHdr (short numFlds,  AttrType types[], short strSizes[])
    * @return a copy of the fldOffset arrray
    *
    */
+  public short[] cp_FldOffset()
+  {
+
+      short[] newFldOffset = new short[3];
+      newFldOffset[0] = 0;
+      if (tuple_length == 8) {
+              newFldOffset[1] = (short) (newFldOffset[0]+4);
+             newFldOffset[2] = (short) (newFldOffset[1]+4);
+
+          }
+          else {
+              newFldOffset[1] = (short) (newFldOffset[0]+50);
+              newFldOffset[2] = (short) (newFldOffset[1]+4);
+      }
+
+
+      return newFldOffset;
+  }
 
   public short[] copyFldOffset() 
    {

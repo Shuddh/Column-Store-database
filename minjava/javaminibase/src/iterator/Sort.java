@@ -188,6 +188,11 @@ public class Sort extends Iterator implements GlobalConst
     while ((p_elems_curr_Q + p_elems_other_Q) < max_elems) {
       try {
 	tuple = _am.get_next();  // according to Iterator.java
+          System.out.println(Convert.getStrValue(0, tuple.getTupleByteArray(), globalVar.sizeOfStr));
+          System.out.println("tuple.noOfFlds()");
+          System.out.println(tuple.noOfFlds());
+
+
       } catch (Exception e) {
 	e.printStackTrace(); 
 	throw new SortException(e, "Sort.java: get_next() failed");
@@ -560,7 +565,7 @@ public class Sort extends Iterator implements GlobalConst
 	      short      len_in,             
 	      short[]    str_sizes,
 	      Iterator   am,                 
-	      int        sort_fld,          
+	      int        sort_fld,
 	      TupleOrder sort_order,     
 	      int        sort_fld_len,  
 	      int        n_pages      
@@ -678,7 +683,11 @@ public class Sort extends Iterator implements GlobalConst
       first_time = false;
       
       // generate runs
-      Nruns = generate_runs(max_elems_in_heap, _in[_sort_fld-1], sortFldLen);
+        System.out.println("runs");
+        System.out.println(max_elems_in_heap);
+        System.out.println(sortFldLen);
+        System.out.println(_sort_fld);
+        Nruns = generate_runs(max_elems_in_heap, _in[_sort_fld-1], sortFldLen);
       //      System.out.println("Generated " + Nruns + " runs");
       
       // setup state to perform merge of runs. 

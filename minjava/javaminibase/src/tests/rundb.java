@@ -13,17 +13,20 @@ import bufmgr.ReplacerException;
 
 import java.io.*;
 import global.*;
+import iterator.ColumnarNestedLoopJoins;
+import iterator.ColumnarBitmapEquiJoins;
+import iterator.ColumnarSort;
 
 
 public class rundb{
 
     public static void main (String argv[]) throws Exception {
         int flush=0;
+        SystemDefs sysdef = new SystemDefs("d", 10000, 500, "Clock");
         run cho = new run();
             while (true) {
                 try {
                     String[] CHOICE = cho.main();
-
 
                     //   System.out.println(CHOICE[0]);
                     String[] choice = (CHOICE[1].split(" "));
@@ -52,6 +55,27 @@ public class rundb{
                             del.main(CHOICE[1].split(" "));
                         }
 
+                        if (CHOICE[0].equals("5")) {
+                            pcounter.initialize();
+                            ColumnarIndexScan colscan = new tests.ColumnarIndexScan();
+                            colscan.main(CHOICE[1].split(" "));
+                        }
+                        if (CHOICE[0].equals("6")) {
+                            pcounter.initialize();
+                            ColumnarNestedLoopJoins colscan = new ColumnarNestedLoopJoins();
+                            colscan.main(CHOICE[1].split(" "));
+                        }
+                        if (CHOICE[0].equals("7")) {
+                            pcounter.initialize();
+                            ColumnarBitmapEquiJoins colscan = new ColumnarBitmapEquiJoins();
+                            colscan.main(CHOICE[1].split(" "));
+                        }
+                        if (CHOICE[0].equals("8")) {
+                            pcounter.initialize();
+                            ColumnarSort colsort = new ColumnarSort();
+                            colsort.main(CHOICE[1].split(" "));
+                        }
+
 
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
@@ -66,13 +90,14 @@ public class rundb{
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
+
                     //      System.out.println("unpin");
                     try {
                         SystemDefs.JavabaseBM.unpinbuffpages();
                         if (flush == 1) {
                             SystemDefs.JavabaseBM.flushAllPages();
                         }
-                        SystemDefs.JavabaseDB.closeDB();
+                       // SystemDefs.JavabaseDB.closeDB();
                         System.out.println("Disk reads: " + (pcounter.rcounter) + " Disk writes: " + (pcounter.wcounter));
                     } catch (Exception e) {
             //            e.printStackTrace();

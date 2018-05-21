@@ -41,12 +41,13 @@ public class ColumnDataPageInfo implements GlobalConst {
     public ColumnDataPageInfo ColumnDataPageInfo(String columnarFileName){
             ColumnDataPageInfo ColumnarPageInfo = new ColumnDataPageInfo();
             try	  {
+
                 Heapfile columnarmetafile = new Heapfile(columnarFileName);
                 RID rid = new RID();
                 Tuple tuple = new Tuple();
                 Scan hfscan = columnarmetafile.openScan();
                 tuple = hfscan.getNext(rid);
-                
+
                 ColumnarPageInfo.getMetaData(tuple);
                
 

@@ -96,7 +96,7 @@ public class Columnarfile implements GlobalConst {
             cdpinfo.setColNames(colNames);
             cdpinfo.setHfNames(hfNames);
             Tuple t =cdpinfo.setMetaData();
-         
+
             columnarinfoFile.insertRecord(t.getTupleByteArray());
         } catch (Exception e) {
             e.printStackTrace();

@@ -189,7 +189,7 @@ public class Convert{
       
       // copies the first 4 bytes of this byte array into data[] 
       System.arraycopy (B, 0, data, position, 4);
-      
+
     }
   
   /**

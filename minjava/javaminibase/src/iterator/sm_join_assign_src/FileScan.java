@@ -57,6 +57,7 @@ public class FileScan extends  Iterator
 	   TupleUtilsException, 
 	   InvalidRelation
     {
+        System.out.println("enter");
       _in1 = in1; 
       in1_len = len_in1;
       s_sizes = s1_sizes;
@@ -80,7 +81,10 @@ public class FileScan extends  Iterator
       
       try {
 	f = new Heapfile(file_name);
-	
+	System.out.println("filename");
+          System.out.println(file_name);
+
+
       }
       catch(Exception e) {
 	throw new FileScanException(e, "Create new heapfile failed");
@@ -131,10 +135,11 @@ public class FileScan extends  Iterator
 	if((tuple1 =  scan.getNext(rid)) == null) {
 	  return null;
 	}
-	
+	System.out.println("tuple1");
+	System.out.println(Convert.getStrValue(0, tuple1.getTupleByteArray(), globalVar.sizeOfStr));
 	tuple1.setHdr(in1_len, _in1, s_sizes);
 	if (PredEval.Eval(OutputFilter, tuple1, null, _in1, null) == true){
-	  Projection.Project(tuple1, _in1,  Jtuple, perm_mat, nOutFlds); 
+	  Projection.Project(tuple1, _in1,  Jtuple, perm_mat, nOutFlds);
 	  return  Jtuple;
 	}        
       }

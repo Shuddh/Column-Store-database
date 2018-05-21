@@ -11,6 +11,10 @@ public class run {
             System.out.println("[2] Index");
             System.out.println("[3] Query");
             System.out.println("[4] Delete");
+        System.out.println("[5] ColumnIndexScan");
+        System.out.println("[6] ColumnNestedLoopJoin");
+        System.out.println("[7] ColumnBitmapEquiJoin");
+        System.out.println("[8] ColumnSort");
 
             try{
                 choice=getChoice();
@@ -30,6 +34,22 @@ public class run {
                         break;
 
                     case 4:
+                        System.out.println("enter the inputs by giving space between them");
+                        inp=getInput();
+                        break;
+                    case 5:
+                        System.out.println("enter the inputs by giving space between them");
+                        inp=getInput();
+                        break;
+                    case 6:
+                        System.out.println("enter the inputs by giving space between them");
+                        inp=getInput();
+                        break;
+                    case 7:
+                        System.out.println("enter the inputs by giving space between them");
+                        inp=getInput();
+                        break;
+                    case 8:
                         System.out.println("enter the inputs by giving space between them");
                         inp=getInput();
                         break;

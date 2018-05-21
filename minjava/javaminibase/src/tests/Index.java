@@ -2,6 +2,7 @@ package tests;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.*;
 
 import bitmap.*;
 import btree.*;
@@ -125,42 +126,50 @@ public class index implements GlobalConst{
         {
             try
             {
+
+                Heapfile Bitmap_metafile = new Heapfile(columnarFileName+"Bitmap"+ColumnIndex);
+
                 RID rid=new RID();
                 Scan hScan=reqHFile.openScan();
                 Tuple hTuple=null;
                while((hTuple=hScan.getNext(rid))!=null) {
                     AttrType attr;
-         
                     KeyClass columnValue = null;
-              
+                    String gl_clv=null;
                     attr= (cfmeta.getAttrTypes())[ColumnIndex];
                     String bitName = null;
                     if(attr.attrType == AttrType.attrInteger)
                     {
                         int colValue = Convert.getIntValue(0, hTuple.getTupleByteArray());
+                        gl_clv=Integer.toString(colValue);
                         columnValue= new IntegerKey(colValue);
                         bitName = "BM!" + columnarFileName + '!' + ColumnIndex + '!'+ Integer.toString(colValue);
-                        System.out.println(bitName);
+                 //       System.out.println(bitName);
 
                     }
                     else if(attr.attrType == AttrType.attrString) {
                         String colValue = Convert.getStrValue(0, hTuple.getTupleByteArray(), globalVar.sizeOfStr);
+                        gl_clv=colValue;
                         columnValue = new StringKey(colValue);
                         bitName = "BM!" + columnarFileName + '!' + ColumnIndex + '!' + colValue;
-                        System.out.println(bitName);
+                //        System.out.println(bitName);
 
                     }
                         PageId  pageid = null;
                          pageid =SystemDefs.JavabaseDB.get_file_entry(bitName);
 
                         if(pageid==null) {
-
-
+                            byte[] Data=new byte[globalVar.sizeOfStr];
+                            Convert.setStrValue(gl_clv,0,Data);
+                            Bitmap_metafile.insertRecord(Data);
                             bmf = new BitMapFile(bitName, reqHFile, columnValue);
                             bmf.printBitMapFile(bitName);
                             System.out.println("created Bitmap index...");
                         }
+
                 }
+             //   System.out.println(SystemDefs.JavabaseDB.get_file_entry(columnarFileName+"Bitmap"+ColumnIndex));
+
             } catch (Exception e)
             {
                 // TODO Auto-generated catch block
